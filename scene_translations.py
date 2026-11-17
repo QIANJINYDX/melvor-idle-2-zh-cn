@@ -103,3 +103,32 @@ TRANSLATIONS = {
     'Edit this NPC': '编辑此NPC',
     'Onboarding Tasks': '新手任务',
 }
+
+# Runtime-formatted scene strings also require direct translation.
+TRANSLATIONS.update({'[color=#E9DFC1]Your [color=#FFD16D]Proficiency[/color]: {0:N0}[/color]': '[color=#E9DFC1]你的[color=#FFD16D]精通[/color]：{0:N0}[/color]',
+ '[color=#E9DFC1]Product [color=#FFD16D]Difficulty[/color]: {0:N0}[/color]': '[color=#E9DFC1]产品[color=#FFD16D]难度[/color]：{0:N0}[/color]',
+ '[color=#E9DFC1]Success Chance: {0:p2}[/color]': '[color=#E9DFC1]成功几率：{0:p2}[/color]',
+ '{0:N0} Items Selected': '已选{0:N0}件',
+ '[b][color=green]+{0:N0}[/color] Skill XP[/b]': '[b][color=green]+{0:N0}[/color]经验[/b]',
+ 'Regrow Interval: [b]{0:numbertime(ms):auto abbr noless:}[/b]': '再生间隔：[b]{0:numbertime(ms):auto abbr '
+                                                                 'noless:}[/b]',
+ 'Lasts [b]{0:numbertime(ms)}[/b] after growing.': '成熟后持续[b]{0:numbertime(ms)}[/b]。',
+ 'Seen {0:N0} times': '已见过{0:N0}次',
+ 'Skill Level {0:N0} Reached': '技能等级已达到{0:N0}',
+ 'Gain {0:F1}x experience': '获得{0:F1}倍经验',
+ 'Gain {0:F1}x item sale value': '售价×{0:F1}',
+ 'When at {0:N0} stacks:': '达到 {0:N0} 层时：',
+ 'Stacks up to {0:N0} times.': '最多叠加 {0:N0} 层。',
+ 'Procs once every {0:F2}s': '每{0:F2}秒触发一次',
+ 'Lasts for {0:F2}s': '持续{0:F2}秒',
+ '[b]{0:N0}[/b] per kill': '每杀[b]{0:N0}[/b]',
+ 'Success Chance: {0:P2}': '成功几率：{0:P2}',
+ 'Damage on Fail: [b]1 - {0:N0}[/b]': '失败伤害[b]1 - {0:N0}[/b]',
+ '+{0:N2} per Study': '每次+{0:N2}',
+ '[color=#b5b5b5]Next unlock at[/color] [b]{0:N0} Knowledge[/b]': '[color=#b5b5b5]下次解锁[/color] '
+                                                                  '[b]{0:N0}知识[/b]',
+ 'Max Hit: [b]1 - {0:N0}[/b]': '伤害[b]1 - {0:N0}[/b]',
+ 'Success Chance: [b]{0:P2}[/b]': '成功几率：[b]{0:P2}[/b]',
+ 'Currency ({0:P2})': '货币（{0:P2}）',
+ 'Common ({0:P2})': '普通({0:P2})',
+ 'Rare ({0:P2})': '稀有({0:P2})'})
