@@ -1,0 +1,1609 @@
+{
+  ".godot/exported/133200997/export-01292a026a95f5c09ce0a0c110c86563-agility_action_view.scn": {
+    "sha256": "36c1eccbe5da6b1e23e39f6df5ebcaeda7b298c26efa3922190e01a81912b626",
+    "edits": [
+      {
+        "offset": 7549,
+        "before": 1,
+        "after": 30,
+        "node": "./HBoxContainer/LeftContainer/VBoxContainer/TechniquesContainer/TechniquesMainContainer/Label"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-040f221fa161221d3153b3c555d07e01-item_info_panel.scn": {
+    "sha256": "2e5860b5beb2f20549d71bdcd8e47330f9096c83c6dd03ea72e034cae3f18f84",
+    "edits": [
+      {
+        "offset": 6741,
+        "before": 24,
+        "after": 2,
+        "node": "./MainContainer/ItemInfoView/VBoxContainer/ItemType"
+      },
+      {
+        "offset": 7269,
+        "before": 24,
+        "after": 2,
+        "node": "./MainContainer/ItemInfoView/VBoxContainer/ItemDescription"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-05975c976d3a9322aeeccc9a5dd7fdc5-special_attack_view.scn": {
+    "sha256": "d99d823104a72b4010b91a1223bd6f233c62e25f7d1f687576eff5593fd395e3",
+    "edits": [
+      {
+        "offset": 5167,
+        "before": 5,
+        "after": 6,
+        "node": "./SpecialAttackContainer2/VBoxContainer/Label2"
+      },
+      {
+        "offset": 5979,
+        "before": 5,
+        "after": 6,
+        "node": "./SpecialAttackContainer2/VBoxContainer/HBoxContainer5/Label3"
+      },
+      {
+        "offset": 6791,
+        "before": 5,
+        "after": 6,
+        "node": "./SpecialAttackContainer2/VBoxContainer/HBoxContainer3/Label2"
+      },
+      {
+        "offset": 8091,
+        "before": 5,
+        "after": 6,
+        "node": "./SpecialAttackContainer2/VBoxContainer/HBoxContainer2/Label2"
+      },
+      {
+        "offset": 8715,
+        "before": 5,
+        "after": 6,
+        "node": "./SpecialAttackContainer2/VBoxContainer/HBoxContainer6/Label2"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-08ea42599e67771ccba94187d11db985-quest_task_goal_view.scn": {
+    "sha256": "ada300e72df36a76361d5bc27a2688d29ce069f1cd2d87a8e97839aa5941b627",
+    "edits": [
+      {
+        "offset": 2120,
+        "before": 6,
+        "after": 14,
+        "node": "./TaskDescription"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-0d2f32c793f09c7e3de1b3a4fc332664-select_combat_area_panel.scn": {
+    "sha256": "2b1abc89f87768b2dff9b24ae53e2e39c40754cd25f6e0451fc9eb8e822d19dc",
+    "edits": [
+      {
+        "offset": 3931,
+        "before": 14,
+        "after": 3,
+        "node": "./VBoxContainer/Header/HBoxContainer/VBoxContainer/CategoryDescription"
+      },
+      {
+        "offset": 4187,
+        "before": 14,
+        "after": 3,
+        "node": "./VBoxContainer/ScrollContainer/MarginContainer/NoCategoryLabel"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-0e2f156ef274f7580f94a16528392933-login_form_view.scn": {
+    "sha256": "22b73e120dca6152ef8226fd24e2b419d95964ca931d6abe1314fccf294bb1fc",
+    "edits": [
+      {
+        "offset": 4303,
+        "before": 16,
+        "after": 25,
+        "node": "./PanelContainer2/HBoxContainer/Label2"
+      },
+      {
+        "offset": 4831,
+        "before": 16,
+        "after": 25,
+        "node": "./ErrorLabel"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-0ec40ed1ac1565f92ad666c14fe52635-bank_configuration_view.scn": {
+    "sha256": "fee444132195d8f2aed0485fe1c7b4598d17808426d0e861c2415b2c309c49f8",
+    "edits": [
+      {
+        "offset": 7345,
+        "before": 17,
+        "after": 20,
+        "node": "./GenerateInfoContainer/GenerateDescription"
+      },
+      {
+        "offset": 8301,
+        "before": 17,
+        "after": 20,
+        "node": "./ImportVBoxContainer/ImportDescription"
+      },
+      {
+        "offset": 9465,
+        "before": 17,
+        "after": 20,
+        "node": "./LockMarginContainer/LockInfoMargins/LockInfoVBoxContainer/LockDescription"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-0febf723433d0a23a7bf4b7b59bd372c-skill_level_up_announcement2.scn": {
+    "sha256": "7ee1f9f09b3cb865644f8733a518fca5afc56b1d7c5916faf40f2d08c2f3cccb",
+    "edits": [
+      {
+        "offset": 10080,
+        "before": 20,
+        "after": 35,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/VBoxContainer/Body"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-10fce082521f10c4a25d90f226e52bbe-accessibility_settings_view.scn": {
+    "sha256": "b4b8d3445482fc1eb775b60e62749c81f636b4bbe1ff5aaa182852fd12ad70d4",
+    "edits": [
+      {
+        "offset": 5375,
+        "before": 9,
+        "after": 2,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/EnableModifierKindArrows/MarginContainer/VBoxContainer/Description"
+      },
+      {
+        "offset": 5803,
+        "before": 9,
+        "after": 2,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/EnableModifierKindColours/MarginContainer/VBoxContainer/Description"
+      },
+      {
+        "offset": 6231,
+        "before": 9,
+        "after": 2,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/DisablePressAndHoldContainer/MarginContainer/VBoxContainer/Description"
+      },
+      {
+        "offset": 6659,
+        "before": 9,
+        "after": 2,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/UseToggleForInteractiveTooltipsContainer/MarginContainer/VBoxContainer/Description"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-1312b448fb56c8db842b6fbdb4f69ee5-time_of_day_settings_view.scn": {
+    "sha256": "1665096e0f19cf4bc501a634a3b9bde408cfe9b65fcd8f04dea50e47a6b87077",
+    "edits": [
+      {
+        "offset": 5837,
+        "before": 9,
+        "after": 2,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Use24HourClockContainer2/MarginContainer/VBoxContainer/Description"
+      },
+      {
+        "offset": 6069,
+        "before": 9,
+        "after": 2,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/TimeCycleType/VBoxContainer/Description"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-138e4f156e49703884b1efce1bb3b16e-mastery_guild_task_completed_notification.scn": {
+    "sha256": "176c73e51db99117f22b45cb9ad866ed1901fa3bb3a8d8a38b87e973a575fcc7",
+    "edits": [
+      {
+        "offset": 7889,
+        "before": 10,
+        "after": 25,
+        "node": "./MainContainer/VBoxContainer/PanelContainer2/HBoxContainer/BodyMargins/VBoxContainer/Body"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-15b1cec4c2bc6cb646e2cfcc0789828c-save_select_panel.scn": {
+    "sha256": "0e225a4ff7d230de0ec359b6c06491210eeadf7c517a5bdb76e8ce055f06c5e0",
+    "edits": [
+      {
+        "offset": 4507,
+        "before": 1,
+        "after": 2,
+        "node": "./VBoxContainer/MarginContainer/PanelContainer/VBoxContainer/NoSaveResetHeader/HBoxContainer/Label"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-18a04422be3acb06141353d7a7b89a43-cooking_selected_recipe_container.scn": {
+    "sha256": "64ef7c42e44a788fccb319e6571f079bd6f117e8b9bcb338e225dce7321981cf",
+    "edits": [
+      {
+        "offset": 10968,
+        "before": 21,
+        "after": 1,
+        "node": "./PanelContainer/SelectedContainer/VBoxContainer/VBoxContainer/HBoxContainer3/VBoxContainer/HBoxContainer2/VBoxContainer2/HBoxContainer3/RecipeName"
+      },
+      {
+        "offset": 11072,
+        "before": 21,
+        "after": 1,
+        "node": "./PanelContainer/SelectedContainer/VBoxContainer/VBoxContainer/HBoxContainer3/VBoxContainer/HBoxContainer2/VBoxContainer2/RecipeDescription"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-1bece3af3b2764754e0afa5acdeb83d8-roadmap2.scn": {
+    "sha256": "612b2db8bc9ff9f0f46fc9422f36596d9ff71e691bee84b4ea3545cc55da5370",
+    "edits": [
+      {
+        "offset": 24002,
+        "before": 3,
+        "after": 0,
+        "node": "./MainMargins/MainContainer/HBoxContainer/VBoxContainer2/VBoxContainer/GridContainer/RegularFeatures/UpdatePanel/MarginContainer/VBoxContainer/VBoxContainer2/MarginContainer/VBoxContainer/ItemUsesSources/VBoxContainer/Label"
+      },
+      {
+        "offset": 26354,
+        "before": 3,
+        "after": 0,
+        "node": "./MainMargins/MainContainer/HBoxContainer/VBoxContainer2/VBoxContainer/GridContainer/VBoxContainer2/Quests/UpdatePanel/MarginContainer/VBoxContainer/VBoxContainer2/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/Label2"
+      },
+      {
+        "offset": 29378,
+        "before": 3,
+        "after": 0,
+        "node": "./MainMargins/MainContainer/HBoxContainer/VBoxContainer2/VBoxContainer/GridContainer/VBoxContainer2/Unscheduled/UpdatePanel/MarginContainer/VBoxContainer/MarginContainer/Label"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-1d757f8b9ff91f9dec2007b831596ea2-recipe_category_button.scn": {
+    "sha256": "4050dbbbbd32e24c8642ba9ab6dabc288bda392ca9a08a2f5db381c15bed6db5",
+    "edits": [
+      {
+        "offset": 3751,
+        "before": 4,
+        "after": 3,
+        "node": "./MarginContainer/UnlockedContainer/VBoxContainer/CategoryName"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-1ecb404a277be18ed484a3464807aad8-game_settings_view.scn": {
+    "sha256": "c4c572867515d40a19a62048741bd1abafd8bdbbe5359e90226546237cb5336b",
+    "edits": [
+      {
+        "offset": 4713,
+        "before": 6,
+        "after": 2,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/StopActionOnFullBank/MarginContainer/VBoxContainer/Description"
+      },
+      {
+        "offset": 4789,
+        "before": 6,
+        "after": 2,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/StopActionOnFullBank/MarginContainer/VBoxContainer/Description2"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-1fcb732a0e5ec9559e1bf27099aae4e6-build_enclosure_view.scn": {
+    "sha256": "499b49444cd8d87a93b742649e9642215a21b797441f764179eac358d19b9a4c",
+    "edits": [
+      {
+        "offset": 6861,
+        "before": 22,
+        "after": 24,
+        "node": "./UnlockedContainer/UnlockedMainContainer/CannotBuildPanel/Label"
+      },
+      {
+        "offset": 7373,
+        "before": 22,
+        "after": 24,
+        "node": "./ConfirmationContainer/Label"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-213a957da1af58bbc157f475ddd58a21-firemaking_bonfire_view.scn": {
+    "sha256": "2148b10e81533741e862a346629b37a4e9e5a38db652b31196250c1baa9ca642",
+    "edits": [
+      {
+        "offset": 8899,
+        "before": 25,
+        "after": 29,
+        "node": "./TopPanel/TopContainer/LockedContainer/Label"
+      },
+      {
+        "offset": 10599,
+        "before": 25,
+        "after": 29,
+        "node": "./MiddleContainer/VBoxContainer/Label"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-215d0e2ea98ea2a7878072863ff62f30-announcement2.scn": {
+    "sha256": "f5856556a70077e07715691e2eb6e8a15a70c81ac64ddaca6188e4f2b1c0646a",
+    "edits": [
+      {
+        "offset": 9884,
+        "before": 18,
+        "after": 33,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/VBoxContainer/Body"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-21abf92f447ccca5544f78d2b0644823-news_card.scn": {
+    "sha256": "af676dbe483ac1707338ee213a3b0587aa2b6d871ec0ab4b1338bcbbccc508b0",
+    "edits": [
+      {
+        "offset": 5193,
+        "before": 11,
+        "after": 2,
+        "node": "./PanelButton/HBoxContainer/TitleMargin/VBoxContainer/Title"
+      },
+      {
+        "offset": 5269,
+        "before": 11,
+        "after": 2,
+        "node": "./PanelButton/HBoxContainer/TitleMargin/VBoxContainer/ShortDescription"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-22530d6dd26c1f2a4252af0f22c6ae0d-audio_settings_view.scn": {
+    "sha256": "bdb6e3967056997393389be52c4cd8a1ecd2ee2bb5e8a927017d22f4f026abea",
+    "edits": [
+      {
+        "offset": 4777,
+        "before": 8,
+        "after": 2,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/ScrollContainer/MarginContainer/SettingsContainer/MuteAudioOnFocusLoss/MarginContainer/VBoxContainer/Description"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-27fc8a66838d63a24e04fdc73edd24af-item_info_panel_compact.scn": {
+    "sha256": "7d2fa281986b31282752ee6498be367302b401612ccc9e7474048c879683711f",
+    "edits": [
+      {
+        "offset": 4683,
+        "before": 13,
+        "after": 15,
+        "node": "./MainContainer/ItemInfoView/VBoxContainer/ItemType"
+      },
+      {
+        "offset": 4883,
+        "before": 13,
+        "after": 15,
+        "node": "./MainContainer/ItemInfoView/VBoxContainer/ItemDescription"
+      },
+      {
+        "offset": 5271,
+        "before": 13,
+        "after": 15,
+        "node": "./MainContainer/ItemInfoView/PassivesContainer/SamplePassive/PassiveDescription"
+      },
+      {
+        "offset": 5571,
+        "before": 13,
+        "after": 15,
+        "node": "./MainContainer/ItemInfoView/PassivesContainer/SamplePassive2/PassiveDescription"
+      },
+      {
+        "offset": 5923,
+        "before": 13,
+        "after": 15,
+        "node": "./MainContainer/ItemInfoView/ModifiersContainer/PositiveModifier/Label3"
+      },
+      {
+        "offset": 6179,
+        "before": 13,
+        "after": 15,
+        "node": "./MainContainer/ItemInfoView/ModifiersContainer/NeutralModifier/Label3"
+      },
+      {
+        "offset": 6435,
+        "before": 13,
+        "after": 15,
+        "node": "./MainContainer/ItemInfoView/ModifiersContainer/NegativeModifier/Label2"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-2ce38dd66bca183048d3b17f7a00bb51-agility_course_view.scn": {
+    "sha256": "dba2a703ae6db9b99f3636b4dfa6674706d8d5a2e962997ab6ca0e05a42fc9a7",
+    "edits": [
+      {
+        "offset": 11012,
+        "before": 34,
+        "after": 36,
+        "node": "./UnlockedContainer/VBoxContainer2/ScrollContainer/VBoxContainer2/SelectedPathContainer/CourseDescriptionLabel"
+      },
+      {
+        "offset": 12220,
+        "before": 34,
+        "after": 36,
+        "node": "./UnlockedContainer/VBoxContainer2/ScrollContainer/VBoxContainer2/SelectedPathContainer/EntryCostsContainer/CostRequirementsContainer/Label"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-2dc227e85c7933562d9ba1b07941eb4d-active_slayer_master_view.scn": {
+    "sha256": "0621573c8dc6820cddb52fe44f4939aa90a843a374c2b636e5f07acde72ae9e3",
+    "edits": [
+      {
+        "offset": 10929,
+        "before": 3,
+        "after": 4,
+        "node": "./VBoxContainer/UnlockedContainer/VBoxContainer/MarginContainer/TaskInfoContainer/HBoxContainer/CurrentTaskContainer/HBoxContainer/CurrentTaskName"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-3065b128bbf46dcae3b5efcdb9b1a74c-equip_item_row.scn": {
+    "sha256": "bf908fb08e8c8fed18462450e797e7981907f5871973290d05014212d116a684",
+    "edits": [
+      {
+        "offset": 4959,
+        "before": 2,
+        "after": 21,
+        "node": "./MainContainer/VBoxContainer/ItemName"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-31f2b97ee9fb1719dbe9645232618cdc-account_link_form_view.scn": {
+    "sha256": "b7dd1b6249b30736bfc9629c6f81189f62d71e61d42c095c9dd1e8f5e7c2da2f",
+    "edits": [
+      {
+        "offset": 6699,
+        "before": 5,
+        "after": 24,
+        "node": "./MainPanel/InnerMargins/MainContainer/ErrorLabel"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-352deabcd221f24a14ad97bed1f3c5d2-quest_step_task_view.scn": {
+    "sha256": "0d49cf801e574d596cd041fb452409b12ab976933c80181365c520321c92f9e0",
+    "edits": [
+      {
+        "offset": 4732,
+        "before": 17,
+        "after": 18,
+        "node": "./TasksPanelContainer/VBoxContainer/TaskLockedLabel"
+      },
+      {
+        "offset": 4888,
+        "before": 17,
+        "after": 18,
+        "node": "./TasksPanelContainer/VBoxContainer/TaskUnlockedContainer/HBoxContainer/TaskTitle"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-3dacd9e5fec647c36e91e3b49a53c384-codex_view.scn": {
+    "sha256": "025d20c3f7133416ec7eb078fdc3cda0a7721a250b36c335eb187780a420e9de",
+    "edits": [
+      {
+        "offset": 10970,
+        "before": 4,
+        "after": 1,
+        "node": "./VBoxContainer/MainContainer/SelectionContainer/ScrollContainer/VBoxContainer2/VBoxContainer3/HBoxContainer/Label"
+      },
+      {
+        "offset": 11038,
+        "before": 4,
+        "after": 1,
+        "node": "./VBoxContainer/MainContainer/SelectionContainer/ScrollContainer/VBoxContainer2/VBoxContainer3/HBoxContainer/Label2"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-3e24c69ae8eee94004d85b8f25b78af0-produces_item_row_minimal.scn": {
+    "sha256": "7a77b42e86e28ab51704e02231ac358df22ed25b296d00800569b06734146121",
+    "edits": [
+      {
+        "offset": 4470,
+        "before": 12,
+        "after": 13,
+        "node": "./HBoxContainer/PanelContainer/MarginContainer/HBoxContainer/ItemName"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-3e26b8acae86c472afa56c7131c2d12a-thieving_location_select_view.scn": {
+    "sha256": "7ee6b81202f6eb0fc27da585b06a77da394ae0d1c913df671f85fb6c78fab8f6",
+    "edits": [
+      {
+        "offset": 3308,
+        "before": 14,
+        "after": 2,
+        "node": "./UnlockedContainer/VBoxContainer/HeaderContainer/DisplayName"
+      },
+      {
+        "offset": 3408,
+        "before": 14,
+        "after": 2,
+        "node": "./UnlockedContainer/VBoxContainer/Description"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-3f1b6a0f64b5fa857a5c8d68f2818837-agility_obstacle_view.scn": {
+    "sha256": "50761147d5ad7c8d2bb3e255788dc8d475fa761faf3570ea35aa0bde73300ac2",
+    "edits": [
+      {
+        "offset": 9333,
+        "before": 25,
+        "after": 42,
+        "node": "./VBoxContainer2/PanelContainer/VBoxContainer/ObstacleName"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-3f4917a6b918b4e092404b56ae0038cb-combat_active_view.scn": {
+    "sha256": "bf0774f7e2e8fe906e11a4d9f1ce1c824b9d882f53665bf156ead85c2a4cc67c",
+    "edits": [
+      {
+        "offset": 19770,
+        "before": 3,
+        "after": 0,
+        "node": "./MarginContainer/VBoxContainer/TopContainer/CharacterHealthContainer/VBoxContainer2/CharacterNameLabel"
+      },
+      {
+        "offset": 27558,
+        "before": 3,
+        "after": 0,
+        "node": "./MarginContainer/VBoxContainer/MainContainer/EnemyContainer/SpriteContainer/PanelContainer/EnemyInfoTabContainer/LootHistory/NoLootHistoryContainer/Label"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-453fa38f222e00d72abe865be1f59910-enemy_name_panel.scn": {
+    "sha256": "376f28869b111111874305c99110c2de8fe9b2b814927ed861aff5a721b3fd1c",
+    "edits": [
+      {
+        "offset": 1783,
+        "before": 7,
+        "after": 2,
+        "node": "./MarginContainer/NameLabel"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-47f891e25251677fbe7a9fc574a3ea45-announcement.scn": {
+    "sha256": "d34cdebd804b1ada1b8fa8a4f68b729c41c62deec466bd046cf79ee3857a1fd7",
+    "edits": [
+      {
+        "offset": 10172,
+        "before": 41,
+        "after": 42,
+        "node": "./PanelScaling/MainContainer/VBoxContainer/MarginContainer2/VBoxContainer/Body"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-49695b9d8529bdec91659571b32f39ad-potions.scn": {
+    "sha256": "83ece8c8993a30a9aa8ff1f8a780dca9622d91662d30a5c47b0fe4b2f8d56b0e",
+    "edits": [
+      {
+        "offset": 8963,
+        "before": 3,
+        "after": 0,
+        "node": "./MainMargins/MainContainer/HBoxContainer/InitialRelease3/UpdatePanel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/Label"
+      },
+      {
+        "offset": 10787,
+        "before": 3,
+        "after": 0,
+        "node": "./MainMargins/MainContainer/HBoxContainer/InitialRelease4/UpdatePanel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/Label"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-4a2c70b56518a8507a662a7b75a7bc21-notification_settings_view.scn": {
+    "sha256": "b6cf5edb1f6f3c8dd159b496d177eeca98193a9386e3bbf430b19685614870e7",
+    "edits": [
+      {
+        "offset": 9266,
+        "before": 17,
+        "after": 2,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer2/VBoxContainer/ItemNotifications/MarginContainer/VBoxContainer/Description"
+      },
+      {
+        "offset": 9694,
+        "before": 17,
+        "after": 2,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer2/VBoxContainer/CurrencyNotifications/MarginContainer/VBoxContainer/Description"
+      },
+      {
+        "offset": 10122,
+        "before": 17,
+        "after": 2,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer2/VBoxContainer/SkillLevelUpNotifications/MarginContainer/VBoxContainer/Description"
+      },
+      {
+        "offset": 10550,
+        "before": 17,
+        "after": 2,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer2/VBoxContainer/QuestCompleteNotifications/MarginContainer/VBoxContainer/Description"
+      },
+      {
+        "offset": 10954,
+        "before": 17,
+        "after": 2,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer2/VBoxContainer/MasteryGuildTaskProgressedNotifications/MarginContainer/VBoxContainer/Description"
+      },
+      {
+        "offset": 11358,
+        "before": 17,
+        "after": 2,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer2/VBoxContainer/MusicNotifications/MarginContainer/VBoxContainer/Description"
+      },
+      {
+        "offset": 12050,
+        "before": 17,
+        "after": 2,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer2/VBoxContainer/AutoCompactNotifications/MarginContainer/VBoxContainer/Description"
+      },
+      {
+        "offset": 12770,
+        "before": 17,
+        "after": 2,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer2/VBoxContainer2/NativeOSNotifications/MarginContainer/VBoxContainer/Description"
+      },
+      {
+        "offset": 13490,
+        "before": 17,
+        "after": 2,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer2/VBoxContainer3/ActionStoppedNativeNotification/MarginContainer/VBoxContainer/Description"
+      },
+      {
+        "offset": 13958,
+        "before": 17,
+        "after": 2,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer2/VBoxContainer3/BankFullNativeNotification/MarginContainer/VBoxContainer/Description"
+      },
+      {
+        "offset": 14426,
+        "before": 17,
+        "after": 2,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer2/VBoxContainer3/SkillLevelUpNativeNotification/MarginContainer/VBoxContainer/Description"
+      },
+      {
+        "offset": 14894,
+        "before": 17,
+        "after": 2,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer2/VBoxContainer3/MasteryGuildRankUpNativeNotification/MarginContainer/VBoxContainer/Description"
+      },
+      {
+        "offset": 15362,
+        "before": 17,
+        "after": 2,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer2/VBoxContainer3/MasteryGuildTaskCompleteNativeNotification/MarginContainer/VBoxContainer/Description"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-5011f21b6f007db5bfb0bbaba4026053-item_info_panel_tooltip.scn": {
+    "sha256": "8f862be31bf19d7a1076113612b26ec6448491c325de9b96282cd5f16f784597",
+    "edits": [
+      {
+        "offset": 4708,
+        "before": 14,
+        "after": 3,
+        "node": "./MainContainer/ItemInfoView/VBoxContainer/ItemType"
+      },
+      {
+        "offset": 4916,
+        "before": 14,
+        "after": 3,
+        "node": "./MainContainer/ItemInfoView/VBoxContainer/ItemDescription"
+      },
+      {
+        "offset": 5304,
+        "before": 14,
+        "after": 3,
+        "node": "./MainContainer/ItemInfoView/PassivesContainer/SamplePassive/PassiveDescription"
+      },
+      {
+        "offset": 5604,
+        "before": 14,
+        "after": 3,
+        "node": "./MainContainer/ItemInfoView/PassivesContainer/SamplePassive2/PassiveDescription"
+      },
+      {
+        "offset": 5956,
+        "before": 14,
+        "after": 3,
+        "node": "./MainContainer/ItemInfoView/ModifiersContainer/PositiveModifier/Label3"
+      },
+      {
+        "offset": 6212,
+        "before": 14,
+        "after": 3,
+        "node": "./MainContainer/ItemInfoView/ModifiersContainer/NeutralModifier/Label3"
+      },
+      {
+        "offset": 6468,
+        "before": 14,
+        "after": 3,
+        "node": "./MainContainer/ItemInfoView/ModifiersContainer/NegativeModifier/Label2"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-515c4fc2b597bd4f6c3f4f8d789384b3-quest_step_progress_notification_v2.scn": {
+    "sha256": "af4be0f851c6b119590747a2c4a825cdda03505b3b1a71ad053d4f00ac7d2250",
+    "edits": [
+      {
+        "offset": 8173,
+        "before": 17,
+        "after": 25,
+        "node": "./PanelContainer2/VBoxContainer/VBoxContainer/PanelContainer/Body"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-556f2155a918741abdf1f3494cd11867-configured_combat_effect_description.scn": {
+    "sha256": "59e10b2b42839f2a4227b888ed5e208449ad61636b67f0b2ff8a15d5aa0e65c8",
+    "edits": [
+      {
+        "offset": 1517,
+        "before": 6,
+        "after": 0,
+        "node": "./ConfiguredCombatEffectLabel"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-557ac51ae5637f57aaa49c879e591442-shop_purchase_view.scn": {
+    "sha256": "99fc8d3ba9dd8658c8fdf3de700073ccc9944f595a764be65f759e28d0d92053",
+    "edits": [
+      {
+        "offset": 7143,
+        "before": 22,
+        "after": 4,
+        "node": "./VBoxContainer/VBoxContainer/HeaderContainer/HBoxContainer/DisplayName"
+      },
+      {
+        "offset": 7703,
+        "before": 22,
+        "after": 4,
+        "node": "./VBoxContainer/VBoxContainer/ScrollContainer/VBoxContainer/DescriptionContainer/Description"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-57deb81e1e73128db92109be3450a9be-opened_item_icon.scn": {
+    "sha256": "207617324927c8d20831a83d0e84c4a2135678e186e7bb66f7ce2ced898a0bb6",
+    "edits": [
+      {
+        "offset": 4750,
+        "before": 16,
+        "after": 21,
+        "node": "./HBoxContainer/VBoxContainer/ItemNameLabel"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-58e33c3c61a7df590a02d5cd470b30a2-openable_item_drops_view.scn": {
+    "sha256": "690ce927ae4459016bfa33b152ff967debaf46fb6ca987e356d8faea6059ca25",
+    "edits": [
+      {
+        "offset": 2862,
+        "before": 9,
+        "after": 18,
+        "node": "./HBoxContainer/VBoxContainer2/ItemName"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-5d4afc0b54df5beeb772f679a6d572e1-combat_area_button.scn": {
+    "sha256": "8b8600874ae562df2c7366bb61f62954926fb49efff19bd997dcbc4d6a6b94c8",
+    "edits": [
+      {
+        "offset": 7397,
+        "before": 3,
+        "after": 27,
+        "node": "./UnlockedContainer/VBoxContainer/HeaderContainer/HBoxContainer/HBoxContainer2/DisplayName"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-65501804abcef4ff40ac25feaef80786-item_info_view.scn": {
+    "sha256": "ec488f9ee639ef794a8e20c2f649f30170db1fa976fbb064fb0f27f57af75b2e",
+    "edits": [
+      {
+        "offset": 3064,
+        "before": 2,
+        "after": 0,
+        "node": "./VBoxContainer/ItemType"
+      },
+      {
+        "offset": 3184,
+        "before": 2,
+        "after": 0,
+        "node": "./VBoxContainer/ItemDescription"
+      },
+      {
+        "offset": 3580,
+        "before": 2,
+        "after": 0,
+        "node": "./PassivesContainer/SamplePassive/PassiveDescription"
+      },
+      {
+        "offset": 3924,
+        "before": 2,
+        "after": 0,
+        "node": "./ModifiersContainer/PositiveModifier/Label3"
+      },
+      {
+        "offset": 4180,
+        "before": 2,
+        "after": 0,
+        "node": "./ModifiersContainer/NeutralModifier/Label3"
+      },
+      {
+        "offset": 4428,
+        "before": 2,
+        "after": 0,
+        "node": "./ModifiersContainer/NegativeModifier/Label2"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-679f59c212ffb4ebe0eda325526e5080-milestones_view.scn": {
+    "sha256": "6ae6d149f78bcd064e287092aa5a1c670e35782a18a1dd6473eb832b25a3b699",
+    "edits": [
+      {
+        "offset": 5015,
+        "before": 3,
+        "after": 0,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/PanelContainer/VBoxContainer/AllCategoryButton"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-6a7a69d5ae56465194bc7702355d765f-open_chest_popup.scn": {
+    "sha256": "def6bde1378d61c3927cc0045a208018125b98ff35a504dcf64dd85ab426031e",
+    "edits": [
+      {
+        "offset": 5830,
+        "before": 1,
+        "after": 19,
+        "node": "./PanelContainer/VBoxContainer/PanelContainer/ScrollContainer/VBoxContainer/OpeningLabel"
+      },
+      {
+        "offset": 5998,
+        "before": 1,
+        "after": 19,
+        "node": "./PanelContainer/VBoxContainer/InsufficientSpaceLabel"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-6c9992c59b490d4cfe1363c67df168d5-herblore_creating_recipe_container.scn": {
+    "sha256": "f794fac4934fc4001056f513b771674043893d831d4500155de3d9049ec4f7d3",
+    "edits": [
+      {
+        "offset": 12703,
+        "before": 32,
+        "after": 3,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/CreatingRecipeContainer/VBoxContainer/ScrollContainer/VBoxContainer2/VBoxContainer/BottlingIntervalContainer/VBoxContainer5/Label2"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-6e1e9e0aaf679bbf5f2f1b9b96a5bce2-selected_quest_view.scn": {
+    "sha256": "6c0dc1a7168db50d8ab4df822d3f970ffb0bfea79d76e579c41e029a2e9f732f",
+    "edits": [
+      {
+        "offset": 4704,
+        "before": 9,
+        "after": 30,
+        "node": "./SelectedQuestInfoContainer/VBoxContainer2/VBoxContainer/QuestSynopsis"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-7363fd1bd4db1887292d7930b2b1baeb-mastery_guild_experience_view.scn": {
+    "sha256": "269b91dbf043e05b6d71c9bd1b8e166673b3ae13ee6757a74f7204683649f767",
+    "edits": [
+      {
+        "offset": 4096,
+        "before": 8,
+        "after": 2,
+        "node": "./MainContainer/VBoxContainer/Points"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-75ed88d6063b2184451cf7a5fe61409e-toolbelt_equipping_widget_view.scn": {
+    "sha256": "3f242dca665c9af025bf1dd13c9c0715893a289c17f4fcde4aa5986a79efb794",
+    "edits": [
+      {
+        "offset": 3786,
+        "before": 6,
+        "after": 1,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/VBoxContainer/Label"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-7dc851dbf3d223f802b283b2b83497b7-current_task_panel.scn": {
+    "sha256": "a2722120cfcb2f7d1ae867ad77164bd1842d3ebce3c6b9b51f15c54e62c613db",
+    "edits": [
+      {
+        "offset": 4759,
+        "before": 13,
+        "after": 0,
+        "node": "./VBoxContainer/TaskInfo/VBoxContainer/HBoxContainer2/EnemyName"
+      },
+      {
+        "offset": 4999,
+        "before": 13,
+        "after": 0,
+        "node": "./VBoxContainer/NoTaskContainer/Label"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-7dcb1f32e04e5fec1b3b4685ac43f1fd-hunting_select_trap_view.scn": {
+    "sha256": "b038f3a60a4ba600a2450c33dc6909398aac14a11590e2f5176f74f5b38a0470",
+    "edits": [
+      {
+        "offset": 3904,
+        "before": 9,
+        "after": 21,
+        "node": "./VBoxContainer/NoTrapSelectedContainer/HBoxContainer2/NoTrapSelectedLabel"
+      },
+      {
+        "offset": 3996,
+        "before": 9,
+        "after": 21,
+        "node": "./VBoxContainer/NoTrapSelectedContainer/HBoxContainer2/NotEnoughTrapsLabel"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-7f82102d6d7679464dfe01e6dfde4278-npc_dialogue_container.scn": {
+    "sha256": "1e0afa9fd1d7bba73076245da1e783eea358c9136dccb1b7be7abe03c88395c7",
+    "edits": [
+      {
+        "offset": 4824,
+        "before": 2,
+        "after": 3,
+        "node": "./MarginContainer/PanelContainer/HBoxContainer/VBoxContainer/Dialogue"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-85e1bfc3dd085c1cc5d6d612111c8a7d-equip_toolbelt_row.scn": {
+    "sha256": "83e5f747c70c89ba3593fe170813acc6052d30363b6b70f441424d28aab9d8fc",
+    "edits": [
+      {
+        "offset": 4607,
+        "before": 3,
+        "after": 19,
+        "node": "./MainContainer/VBoxContainer/ItemName"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-87a1f560ceb52ffc67499485208b801d-thieving_recipe_view.scn": {
+    "sha256": "1c579d0fca53e36080b1f88dc4aba3afd14bcf2cea532470887987547e898559",
+    "edits": [
+      {
+        "offset": 12732,
+        "before": 28,
+        "after": 1,
+        "node": "./BoxContainer/RecipeName"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-898454597a615106b1ad411a1db2288d-produces_item_row.scn": {
+    "sha256": "189e3a3c41493255eb2aee5b9caf050543e3d89a2ca9348f3ae0d103d01e36c9",
+    "edits": [
+      {
+        "offset": 5428,
+        "before": 12,
+        "after": 13,
+        "node": "./HBoxContainer/PanelContainer/MarginContainer/HBoxContainer/ItemName"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-898bd5db71c4f7d29fea6b1654f06299-herblore_selected_recipe_container.scn": {
+    "sha256": "f797dd0b88b9907c48aa886c2ee2e8a922fb42b2ad83063c7bcf2bbbe6f5f0af",
+    "edits": [
+      {
+        "offset": 12290,
+        "before": 24,
+        "after": 25,
+        "node": "./MarginContainer/PanelContainer/SelectedContainer/VBoxContainer2/ScrollContainer/VBoxContainer/VBoxContainer/HBoxContainer3/VBoxContainer/HBoxContainer2/VBoxContainer/RecipeDescription"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-8ed491f182c363107f3b7ba170225ea6-display_settings_view.scn": {
+    "sha256": "0abe44fb565be97c38624d22c87a9f02f653752b3a7ceec03487d0b4b30d3ba3",
+    "edits": [
+      {
+        "offset": 7422,
+        "before": 15,
+        "after": 2,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/DisplayModeContainer/VBoxContainer/Description"
+      },
+      {
+        "offset": 7778,
+        "before": 15,
+        "after": 2,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/DisplaySizeContainer/VBoxContainer/Description"
+      },
+      {
+        "offset": 8134,
+        "before": 15,
+        "after": 2,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/ScreenContainer/ScreenLabel/Description"
+      },
+      {
+        "offset": 8662,
+        "before": 15,
+        "after": 2,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/EnableVSyncContainer/MarginContainer/VBoxContainer/Description"
+      },
+      {
+        "offset": 9090,
+        "before": 15,
+        "after": 2,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/AlwaysOnTopContainer/MarginContainer/VBoxContainer/Description"
+      },
+      {
+        "offset": 9518,
+        "before": 15,
+        "after": 2,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/KeepScreenOnContainer/MarginContainer/VBoxContainer/Description"
+      },
+      {
+        "offset": 9750,
+        "before": 15,
+        "after": 2,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/MaxFPSContainer/VBoxContainer/Description"
+      },
+      {
+        "offset": 10066,
+        "before": 15,
+        "after": 2,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/WindowScaleContainer/VBoxContainer/Description"
+      },
+      {
+        "offset": 10578,
+        "before": 15,
+        "after": 2,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/EnableParticlesContainer/MarginContainer/VBoxContainer/Description"
+      },
+      {
+        "offset": 10998,
+        "before": 15,
+        "after": 2,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/EnableAnimationsContainer/MarginContainer/VBoxContainer/Description"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-903b36e76d0a07dc9f69dcaa23267122-technique_level_view.scn": {
+    "sha256": "b94966b0c7304ba1a3daa878041844d3c2193d4e9127e869c69c9690a132b7ee",
+    "edits": [
+      {
+        "offset": 5160,
+        "before": 14,
+        "after": 2,
+        "node": "./UnlockedContainer/HBoxContainer/VBoxContainer/UnlockedHBoxContainer/Tooltip/PanelContainer/VBoxContainer/Label"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-90eb4f4fd04b18851222a9574c22c51b-ranching_enclosure_view.scn": {
+    "sha256": "588be3482e6b03e64f5504abbd14d6fd64878c99c262bfc15ba872a902184129",
+    "edits": [
+      {
+        "offset": 20812,
+        "before": 1,
+        "after": 44,
+        "node": "./MarginContainer/EnclosureView/ScrollContainer/HBoxContainer/VBoxContainer/EnclosureManagementContent/EnclosureManagementMainContainer/NoEnclosureContainer/Label"
+      },
+      {
+        "offset": 22692,
+        "before": 1,
+        "after": 44,
+        "node": "./MarginContainer/EnclosureView/ScrollContainer/HBoxContainer/VBoxContainer2/PurchaseAnimalsContent/PurchaseAnimalsBodyContainer/AnimalsGiveXpContainer/HBoxContainer/Label"
+      },
+      {
+        "offset": 24068,
+        "before": 1,
+        "after": 44,
+        "node": "./MarginContainer/EnclosureView/ScrollContainer/HBoxContainer/VBoxContainer3/EnclosureManagementContent3/FoodManagementDetailsContainer/FoodContainer/AnimalsDontEatLabel"
+      },
+      {
+        "offset": 24540,
+        "before": 1,
+        "after": 44,
+        "node": "./MarginContainer/EnclosureView/ScrollContainer/HBoxContainer/VBoxContainer3/EnclosureManagementContent3/FoodManagementDetailsContainer/VBoxContainer/TreatsBodyContainer/AnimalsNoTreatsLabel"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-96360cc041f39d3e5dea24a994c3b3e7-woodcutting_tree_select_view.scn": {
+    "sha256": "e475145f9bd912fc12bab239c293fbe44162eb4e2e4822b4333da8ddb0649d4a",
+    "edits": [
+      {
+        "offset": 11339,
+        "before": 33,
+        "after": 1,
+        "node": "./PanelContainer/UnlockedContainer/CategoryPanel/MarginContainer/HBoxContainer/VBoxContainer/TreeName"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-9b7726bc84fb439ba05d1e4d8555a560-bank_settings_view.scn": {
+    "sha256": "3b799d1df430e96dc70062dcd79167bf7a6615f44882a07270df0ca11702dee4",
+    "edits": [
+      {
+        "offset": 4925,
+        "before": 10,
+        "after": 0,
+        "node": "./VBoxContainer/LockedNoticePanelContainer/HBoxContainer/Label2"
+      },
+      {
+        "offset": 5257,
+        "before": 10,
+        "after": 0,
+        "node": "./PanelContainer/GeneralOptionsContainer/HBoxContainer4/VBoxContainer/Label3"
+      },
+      {
+        "offset": 5769,
+        "before": 10,
+        "after": 0,
+        "node": "./PanelContainer/GeneralOptionsContainer/AutoSortContainer/MarginContainer/VBoxContainer/Description"
+      },
+      {
+        "offset": 6229,
+        "before": 10,
+        "after": 0,
+        "node": "./PanelContainer/GeneralOptionsContainer/AutomaticItemPlaceholderContainer/MarginContainer/VBoxContainer/Description"
+      },
+      {
+        "offset": 6421,
+        "before": 10,
+        "after": 0,
+        "node": "./PanelContainer/GeneralOptionsContainer/HBoxContainer3/VBoxContainer/Label3"
+      },
+      {
+        "offset": 6681,
+        "before": 10,
+        "after": 0,
+        "node": "./PanelContainer/GeneralOptionsContainer/HBoxContainer5/VBoxContainer/Label3"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-9cd5e3a0bdc78fe2ba39753b0ce46dc5-produces_currency_row.scn": {
+    "sha256": "17ee83c4586d9feb90be082624a651c060d2e054dc446e8596248cb0f1d3e0ed",
+    "edits": [
+      {
+        "offset": 3995,
+        "before": 10,
+        "after": 11,
+        "node": "./HBoxContainer/PanelContainer/MarginContainer/HBoxContainer/CurrencyName"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-9dcfbdbd013a3a66b1a4217460f7b382-special_attack_info_panel.scn": {
+    "sha256": "dcf140e1b9d912cced5c171246cea5692873e6001f85951f766fc4f49f6f6669",
+    "edits": [
+      {
+        "offset": 5542,
+        "before": 5,
+        "after": 9,
+        "node": "./MainContainer/AttacksContainer/SampleDescription1/MarginContainer/VBoxContainer/Label2"
+      },
+      {
+        "offset": 6338,
+        "before": 5,
+        "after": 9,
+        "node": "./MainContainer/AttacksContainer/SampleDescription2/MarginContainer/VBoxContainer2/Label2"
+      },
+      {
+        "offset": 6962,
+        "before": 5,
+        "after": 9,
+        "node": "./MainContainer/AttacksContainer/SampleDescription2/MarginContainer/VBoxContainer2/HBoxContainer5/Label3"
+      },
+      {
+        "offset": 7774,
+        "before": 5,
+        "after": 9,
+        "node": "./MainContainer/AttacksContainer/SampleDescription2/MarginContainer/VBoxContainer2/HBoxContainer3/Label2"
+      },
+      {
+        "offset": 8946,
+        "before": 5,
+        "after": 9,
+        "node": "./MainContainer/AttacksContainer/SampleDescription2/MarginContainer/VBoxContainer2/HBoxContainer2/Label2"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-9e5c9092fb1a88d93726255eb57324a4-rare_event_observed_modal.scn": {
+    "sha256": "38fc15496398340e86b586cdb9d009eba7221df07d9d31ee8962480fe7840ae3",
+    "edits": [
+      {
+        "offset": 7537,
+        "before": 17,
+        "after": 19,
+        "node": "./PanelContainer/MainContainer/BodyContainer/VBoxContainer/EventName"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-a352f83bd949128f78eafc1a7337c800-combat_effect_modifier_description.scn": {
+    "sha256": "1495ec6c36cbcca795209ed6061f2d59aaf5fabb5310ae7e96250d45ee365c03",
+    "edits": [
+      {
+        "offset": 2116,
+        "before": 9,
+        "after": 0,
+        "node": "./TriggerDescription"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-a6a2fb00d7a22f2720f33db4b3f25629-player_dialogue_container.scn": {
+    "sha256": "0946800380a96277e5c9fe2703de98db88b763cdcb7a1f060a9a77e4d98e8980",
+    "edits": [
+      {
+        "offset": 4538,
+        "before": 2,
+        "after": 11,
+        "node": "./MarginContainer/PanelContainer/HBoxContainer/VBoxContainer/Dialogue"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-a6d81d3c0a1b1a2a81ae56081c6361ae-grain_mill_view.scn": {
+    "sha256": "78b0971c01ecc502043f110fd4c5b870a63f5dabb34c079e2dbfa08e785ce3ed",
+    "edits": [
+      {
+        "offset": 11514,
+        "before": 20,
+        "after": 27,
+        "node": "./MiddleContainer/VBoxContainer/ScrollContainer/VBoxContainer/ProductContainer/RecipeSelectedContainer/InfoContainer/HBoxContainer/Label"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-ad2e4376ba15b02564deba7910fbed7f-artisan_selected_recipe_container.scn": {
+    "sha256": "ae3641aeedee2470da1311debda9a3bd3d8b8cb9c6b96b1f8c5ca6a1ec885e8e",
+    "edits": [
+      {
+        "offset": 11521,
+        "before": 24,
+        "after": 2,
+        "node": "./MarginContainer/PanelContainer/SelectedContainer/VBoxContainer/VBoxContainer/HBoxContainer3/VBoxContainer/HBoxContainer2/VBoxContainer2/HBoxContainer3/RecipeName"
+      },
+      {
+        "offset": 11665,
+        "before": 24,
+        "after": 2,
+        "node": "./MarginContainer/PanelContainer/SelectedContainer/VBoxContainer/VBoxContainer/HBoxContainer3/VBoxContainer/HBoxContainer2/VBoxContainer2/RecipeDescription"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-b1149a8a9184ee2dd04f2ef72a8c4420-hunting_selected_recipe_container.scn": {
+    "sha256": "9b5feaedab476c03a563b19b31c6c28e4e277af91cab9cbe83141149cca0f3ea",
+    "edits": [
+      {
+        "offset": 11100,
+        "before": 25,
+        "after": 3,
+        "node": "./MarginContainer/PanelContainer/SelectedContainer/VBoxContainer/MarginContainer/ScrollContainer/VBoxContainer/VBoxContainer/HBoxContainer2/VBoxContainer/RecipeDescription"
+      },
+      {
+        "offset": 12708,
+        "before": 25,
+        "after": 3,
+        "node": "./MarginContainer/PanelContainer/SelectedContainer/VBoxContainer/MarginContainer/ScrollContainer/VBoxContainer/vBoxContainer2/AnimalXPInfoContainer/HBoxContainer/Label"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-b1ab03a491be8a8da288ad9801449ded-fishing_recipe_view.scn": {
+    "sha256": "e94731b59e99bc296d3bd1c0139df06bf036b8d7ca494a4a618181b1fc65a0e0",
+    "edits": [
+      {
+        "offset": 24070,
+        "before": 1,
+        "after": 2,
+        "node": "./MarginContainer/MarginContainer2/ActionContainer/UnlockedContainer/VBoxContainer/MarginContainer2/VBoxContainer/SpecialItemsContainer/SpecialItemsHintLabel"
+      },
+      {
+        "offset": 24146,
+        "before": 1,
+        "after": 2,
+        "node": "./MarginContainer/MarginContainer2/ActionContainer/UnlockedContainer/VBoxContainer/MarginContainer2/VBoxContainer/SpecialItemsContainer/NoSpecialItemsLabel"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-b9bb9c0e185ca5a2f9d8f15a2e02f02f-hunting_current_recipe_container.scn": {
+    "sha256": "f65cd1c173c54b03ac082f9c90f37d73c185cf696c10bf78d1d7625422e08b98",
+    "edits": [
+      {
+        "offset": 22322,
+        "before": 43,
+        "after": 3,
+        "node": "./MarginContainer/PanelContainer3/CreatingContainer/VBoxContainer/MarginContainer/ScrollContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer5/Label"
+      },
+      {
+        "offset": 23990,
+        "before": 43,
+        "after": 3,
+        "node": "./MarginContainer/PanelContainer3/CreatingContainer/VBoxContainer/MarginContainer/ScrollContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer4/Label"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-bbf999e66029ee7ce2987c46e182839b-fishing_location_details_view.scn": {
+    "sha256": "3a5ecedf805979db1e7bae906674169f725a0ff227ee759e22eee00f819160f7",
+    "edits": [
+      {
+        "offset": 3832,
+        "before": 6,
+        "after": 11,
+        "node": "./MainContainer/DetailsContainer/LocationDescription"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-be6a0745a612d4d7a54c2cb2e6c6e1cc-interface_settings_view.scn": {
+    "sha256": "89d378cc88dbd14f26db1089de0ab8c8dc8112643c314d97818ed3eb1514dd9e",
+    "edits": [
+      {
+        "offset": 8484,
+        "before": 19,
+        "after": 2,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/ScrollContainer/MarginContainer/SettingsContainer/DimTheLights/VBoxContainer/Description"
+      },
+      {
+        "offset": 9112,
+        "before": 19,
+        "after": 2,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/ScrollContainer/MarginContainer/SettingsContainer/CloseSidebarOnOptionSelected/MarginContainer/VBoxContainer/Description"
+      },
+      {
+        "offset": 9788,
+        "before": 19,
+        "after": 2,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/ScrollContainer/MarginContainer/SettingsContainer/BankHeaderNavigation/MarginContainer/VBoxContainer/Description"
+      },
+      {
+        "offset": 10256,
+        "before": 19,
+        "after": 2,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/ScrollContainer/MarginContainer/SettingsContainer/ShopHeaderNavigation/MarginContainer/VBoxContainer/Description"
+      },
+      {
+        "offset": 10684,
+        "before": 19,
+        "after": 2,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/ScrollContainer/MarginContainer/SettingsContainer/InterfaceAnimations/MarginContainer/VBoxContainer/Description"
+      },
+      {
+        "offset": 11112,
+        "before": 19,
+        "after": 2,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/ScrollContainer/MarginContainer/SettingsContainer/ArachnophobiaMode/MarginContainer/VBoxContainer/Description"
+      },
+      {
+        "offset": 11740,
+        "before": 19,
+        "after": 2,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/ScrollContainer/MarginContainer/SettingsContainer/UseLegacySidebar/MarginContainer/VBoxContainer/Description"
+      },
+      {
+        "offset": 12168,
+        "before": 19,
+        "after": 2,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/ScrollContainer/MarginContainer/SettingsContainer/LegacyShowCombatNavigationContainer/MarginContainer/VBoxContainer/Description"
+      },
+      {
+        "offset": 12600,
+        "before": 19,
+        "after": 2,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/ScrollContainer/MarginContainer/SettingsContainer/TooltipDelay/VBoxContainer/Description"
+      },
+      {
+        "offset": 12908,
+        "before": 19,
+        "after": 2,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/ScrollContainer/MarginContainer/SettingsContainer/TooltipOffset/VBoxContainer/Description"
+      },
+      {
+        "offset": 13604,
+        "before": 19,
+        "after": 2,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/ScrollContainer/MarginContainer/SettingsContainer/ShowLevelGoalsAsXp/MarginContainer/VBoxContainer/Description"
+      },
+      {
+        "offset": 14032,
+        "before": 19,
+        "after": 2,
+        "node": "./MarginContainer/PanelContainer/MarginContainer/ScrollContainer/MarginContainer/SettingsContainer/ShowLevelGoalsAsXp2/MarginContainer/VBoxContainer/Description"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-be754442ff0330dec1d841635dd326c1-quest_step_complete_notification_v2.scn": {
+    "sha256": "56bb43b7d7261287d027fe2e3a13af2bde7e2f640dd49f470d39666d0fcbb55d",
+    "edits": [
+      {
+        "offset": 7749,
+        "before": 18,
+        "after": 25,
+        "node": "./PanelContainer2/VBoxContainer/VBoxContainer/PanelContainer/Body"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-c01e0a9c077d298cff76747a305649cb-item_opening_results_view.scn": {
+    "sha256": "7b88a1a3f337b23be36d9acf7e5ceadb2b044500a940cdc43d4b416864dc21a9",
+    "edits": [
+      {
+        "offset": 4013,
+        "before": 14,
+        "after": 2,
+        "node": "./VBoxContainer/OpeningLabel"
+      },
+      {
+        "offset": 4309,
+        "before": 14,
+        "after": 2,
+        "node": "./VBoxContainer/InsufficientSpaceLabel"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-c0e54670c9758d23e582532e7630bb0e-completion_header_view.scn": {
+    "sha256": "49108edaccc69e4dde88bcfb36e4fd3271cbf59be3faa45e8ba7d2660785a8dd",
+    "edits": [
+      {
+        "offset": 6809,
+        "before": 3,
+        "after": 4,
+        "node": "./PanelContainer/MarginContainer/VBoxContainer/ProgressCheckpointsContainer/HBoxContainer/VBoxContainer/Label2"
+      },
+      {
+        "offset": 7177,
+        "before": 3,
+        "after": 4,
+        "node": "./PanelContainer/MarginContainer/VBoxContainer/ProgressCheckpointsContainer/HBoxContainer2/VBoxContainer/Label2"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-cb9cccf0b64dcd6fa10c170b5a00bb94-skill_level_up_announcement.scn": {
+    "sha256": "d22381fc4bb6c1d7cbfd2f2dd55fab0e9970799542c51ea9882c093eeffdb7e8",
+    "edits": [
+      {
+        "offset": 11187,
+        "before": 43,
+        "after": 44,
+        "node": "./PanelScaling/MainContainer/VBoxContainer/MarginContainer2/VBoxContainer/Body"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-d40f6ad99b0e153e97a90e405fb79941-potion_group_select_button.scn": {
+    "sha256": "003aad35f9c2bd8f201fbde1438b804388449b441dd5dcab93145c2b4764766d",
+    "edits": [
+      {
+        "offset": 3493,
+        "before": 2,
+        "after": 18,
+        "node": "./UnlockedContainer/VBoxContainer/PotionGroupName"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-d613a7a6e435415845fbb2cebc730f24-ranching_action_view.scn": {
+    "sha256": "e207a88688ccadecfabe32775f8127f0df5c0734eef3e6d984cd694fd08c50bf",
+    "edits": [
+      {
+        "offset": 10973,
+        "before": 3,
+        "after": 0,
+        "node": "./RanchingLandView/RanchingLandOverview/ScrollContainer/VBoxContainer/EnclosureNotBuiltContainer/PanelContainer/HBoxContainer/Label"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-d633c2b09c1d96f5361241cee22d52f4-steam_next_fest_popup.scn": {
+    "sha256": "036bb3c7cd7406700342d7a5ad174e498f30ef4d9b59d48c98f072c2a08a0a66",
+    "edits": [
+      {
+        "offset": 6369,
+        "before": 2,
+        "after": 17,
+        "node": "./MarginContainer/PanelContainer/VBoxContainer/PanelContainer/VBoxContainer/Label"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-d68b15568c2b53160533e0522818166a-shop_category_button.scn": {
+    "sha256": "9e14ff2ccd892a2a8486d2c2d5d8bed3acde6bec84e0e17757692a867481b978",
+    "edits": [
+      {
+        "offset": 3601,
+        "before": 3,
+        "after": 2,
+        "node": "./UnlockedContainer/HBoxContainer/VBoxContainer/Description"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-e322182a3586c84fc68a21380e01c35e-farming_action_view.scn": {
+    "sha256": "ba7ab23cb24740e9810c2ff644a6260266d02c9fba0bc2ff5676a71b19101538",
+    "edits": [
+      {
+        "offset": 10310,
+        "before": 1,
+        "after": 2,
+        "node": "./ContextMenu/SelectSeedContextContainer/VBoxContainer/SetAllPlots"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-e433841aa44f96e9066ab72e7703e5f9-system_dialogue_container.scn": {
+    "sha256": "032333ad8e8d26e746222493632d2e17787c245824bac70c23121b441a2f8267",
+    "edits": [
+      {
+        "offset": 2889,
+        "before": 2,
+        "after": 3,
+        "node": "./PanelContainer/TextLabel"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-f2ff52324873e36222a639c97c8ab188-crafting_recipe_button.scn": {
+    "sha256": "8fc60e2e3466a15030af4b0775f0f536d64a85f68754d07772ab4a9a69ca3555",
+    "edits": [
+      {
+        "offset": 4646,
+        "before": 4,
+        "after": 3,
+        "node": "./MarginContainer/HBoxContainer/UnlockedContainer/HBoxContainer/RecipeName"
+      },
+      {
+        "offset": 4870,
+        "before": 4,
+        "after": 3,
+        "node": "./MarginContainer/HBoxContainer/LockedContainer/LockedName"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-f430a13a4d7b639b90def5b7feba00f1-agility_location_select_view.scn": {
+    "sha256": "34ceda34d808328fc74ca52cdc9ce81502a5fa580fc50e202ce2f3f9167b96f4",
+    "edits": [
+      {
+        "offset": 2950,
+        "before": 12,
+        "after": 2,
+        "node": "./UnlockedContainer/VBoxContainer/HeaderContainer/DisplayName"
+      },
+      {
+        "offset": 3042,
+        "before": 12,
+        "after": 2,
+        "node": "./UnlockedContainer/VBoxContainer/Description"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-f546b17d3d5fe1c3637b684ee79f8d2d-ranching_enclosure_upgrade_purchase_view.scn": {
+    "sha256": "ed7ad4efb5262b9758ceddaa3d23367e54f7a6f8043064ca2aa056f773680dfb",
+    "edits": [
+      {
+        "offset": 5809,
+        "before": 17,
+        "after": 19,
+        "node": "./VBoxContainer/VBoxContainer/HeaderContainer/DisplayName"
+      },
+      {
+        "offset": 6225,
+        "before": 17,
+        "after": 19,
+        "node": "./VBoxContainer/VBoxContainer/ScrollContainer/VBoxContainer/DescriptionContainer/Description"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-fa27dae9a7617459496caaad2ed5b4c8-combat_area_category_button.scn": {
+    "sha256": "46164ef8f67e374962deb5538de09f7e8daaa6142f4b2640e8fcfaf840c0c62e",
+    "edits": [
+      {
+        "offset": 3688,
+        "before": 1,
+        "after": 21,
+        "node": "./HBoxContainer/TextContainer/DescriptionLabel"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-fb7a88955b356e18899fa87691022abe-mastery_guild_bonus_view.scn": {
+    "sha256": "b2d9c68de47c1f93a8a842d12f06513458c9a8f2ee696d379d96eb538469f7ae",
+    "edits": [
+      {
+        "offset": 1957,
+        "before": 10,
+        "after": 14,
+        "node": "./CustomDescription"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-ffbb1eeb8922049d4bba8c697acdd727-quest_step_completed_notification.scn": {
+    "sha256": "6d69f2ef9ae127f4569e2b43a1d537721419131e068be83b1a14101d9bb2f5ea",
+    "edits": [
+      {
+        "offset": 6631,
+        "before": 11,
+        "after": 22,
+        "node": "./MainContainer/VBoxContainer/HBoxContainer/BodyMargins/VBoxContainer/Body"
+      }
+    ]
+  },
+  ".godot/exported/133200997/export-fff84b932cdf2d55fe02d833f7306771-pause_menu.scn": {
+    "sha256": "77e9953907e1b3df65c4ace35e1c644e4302c4f0a4cef7332a6989a5a53a2edb",
+    "edits": [
+      {
+        "offset": 9650,
+        "before": 3,
+        "after": 0,
+        "node": "./SurveyContainer/HBoxContainer/RichTextLabel"
+      },
+      {
+        "offset": 10978,
+        "before": 3,
+        "after": 0,
+        "node": "./SkipOnboardingContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/PanelContainer/VBoxContainer/Label2"
+      }
+    ]
+  }
+}

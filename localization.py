@@ -186,6 +186,8 @@ def build_replacements(entries):
                 offset = payload.find(old, offset + len(old))
         if changed:
             replacements[name] = bytes(payload)
+    from layout_patch import apply_layout
+    stats['wrapping_labels'] = apply_layout(entries, replacements)
     return replacements, stats
 
 
