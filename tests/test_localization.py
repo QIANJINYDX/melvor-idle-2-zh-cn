@@ -39,6 +39,22 @@ def fixture():
 
 
 class LocalizationTests(unittest.TestCase):
+    def test_padded_scene_format_keeps_offsets_and_parameters(self):
+        with tempfile.TemporaryDirectory() as folder:
+            exe = Path(folder)/'Melvor2.exe'
+            exe.write_bytes(fixture())
+            entries = localization.catalog_entries(exe, True)
+        source = b'{0:N0} in Bank\0'
+        slot = source + b'\0\0'
+        payload = b'RSRC' + struct.pack('<I', len(slot)) + slot + b'NEXT_RESOURCE'
+        entries['item_notification.scn'] = {'data': payload}
+        replacements, _ = localization.build_replacements(entries)
+        actual = replacements['item_notification.scn']
+        self.assertEqual(len(actual), len(payload))
+        self.assertEqual(actual[-13:], b'NEXT_RESOURCE')
+        self.assertIn('库存{0:N0}'.encode(), actual)
+        self.assertEqual(struct.unpack_from('<I', actual, 4)[0], len(slot))
+
     def test_concurrent_operation_is_rejected_and_lock_released(self):
         with tempfile.TemporaryDirectory() as folder:
             with patcher.installation_lock(folder):
