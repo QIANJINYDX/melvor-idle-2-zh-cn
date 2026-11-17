@@ -2,11 +2,13 @@
 
 Windows 一键汉化及恢复工具，已在 0.11.6-alpha.1 / Godot 4.7.2 实机检查。**仍有已知漏译，不宣称百分之百汉化。**
 
-旧版 v1 只设置语言字段，不能解决此游戏版本的中文加载问题，请改用 v2。
+**[下载最新版汉化器 EXE](https://github.com/QIANJINYDX/melvor-idle-2-zh-cn/releases/latest/download/Melvor2-Chinese-Patch.exe)** · [最新发布说明](https://github.com/QIANJINYDX/melvor-idle-2-zh-cn/releases/latest)
+
+GitHub 当前仅保留 v2.9.1 发布版。旧版 v1 只设置语言字段，无法完成当前版本的汉化，旧下载已移除；如果电脑上仍有旧安装器，请重新下载上面的最新版。
 
 ## 使用
 
-1. 在 Releases 下载 `Melvor2-Chinese-Patch.exe`，无需 Python。
+1. 点击上面的“下载最新版汉化器 EXE”，无需 Python。
 2. 正常退出游戏，运行工具，选择包含 `Melvor2.exe` 的目录。
 3. 点击“一键汉化 + 字体适配”，完成后通过 Steam 启动游戏。
 4. 撤销时退出游戏，点击“恢复原版”。原版备份会保留。
