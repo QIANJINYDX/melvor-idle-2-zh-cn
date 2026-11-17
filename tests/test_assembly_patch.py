@@ -2,12 +2,22 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
+import re
+from collections import Counter
 from unittest.mock import patch
 
 import assembly_patch as ap
 
 
 class AssemblyTransactionTests(unittest.TestCase):
+    def test_reviewed_display_templates_preserve_tokens_and_fit(self):
+        translations = json.loads(Path(ap.__file__).with_name('assembly_translations.json').read_text('utf-8'))
+        for source, target in translations.items():
+            with self.subTest(source=source):
+                self.assertLessEqual(len(target.encode('utf-16-le')), len(source.encode('utf-16-le')))
+                for pattern in (r'\{[^{}]*\}', r'\[[^\]]*\]'):
+                    self.assertEqual(Counter(re.findall(pattern, source)), Counter(re.findall(pattern, target)))
+
     def make_root(self, folder):
         root = Path(folder)/ap.DATA_DIR
         root.mkdir()

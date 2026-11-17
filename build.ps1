@@ -5,5 +5,5 @@ if ($LASTEXITCODE -ne 0) { throw 'venv failed' }
 if ($LASTEXITCODE -ne 0) { throw 'dependency installation failed' }
 & .\.venv\Scripts\python.exe -m unittest discover -s tests -v
 if ($LASTEXITCODE -ne 0) { throw 'tests failed' }
-& .\.venv\Scripts\python.exe -m PyInstaller --noconfirm --clean --onefile --windowed --add-data 'reviewed_aliases.json;.' --add-data 'story_translations.json;.' --name Melvor2-Chinese-Patch patcher.py
+& .\.venv\Scripts\python.exe -m PyInstaller --noconfirm --clean --onefile --windowed --add-data 'reviewed_aliases.json;.' --add-data 'story_translations.json;.' --add-data 'assembly_translations.json;.' --name Melvor2-Chinese-Patch patcher.py
 if ($LASTEXITCODE -ne 0) { throw 'build failed' }

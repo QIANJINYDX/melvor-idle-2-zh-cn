@@ -44,6 +44,7 @@ def patch_game(data):
     payload = heap.__data__
     wanted = {'[center][b]You were away for {0:numbertime(ms):auto}[/b][/center]':
               '[center][b]你已离线 {0:numbertime(ms):auto}[/b][/center]'}
+    wanted.update(json.loads(Path(__file__).with_name('assembly_translations.json').read_text('utf-8')))
     result = bytearray(data)
     found = set()
     pos = 1
@@ -73,7 +74,7 @@ def patch_game(data):
             found.add(source)
         pos += width + size
     if found != set(wanted):
-        raise ValueError('未找到预期的离线提示模板，停止修改程序集。')
+        raise ValueError('未找到预期的显示文本模板，停止修改程序集。')
     return bytes(result)
 
 
@@ -120,7 +121,7 @@ def install(game):
         atomic_bytes(root / name, patched)
         if hashlib.sha256((root / name).read_bytes()).hexdigest() != state[name]['patched']:
             raise ValueError(f'{name} 安装后校验失败。')
-    return '已修复离线提示与中文时间单位。'
+    return '已修复显示提示与中文时间单位。'
 
 
 def atomic_bytes(path, data):

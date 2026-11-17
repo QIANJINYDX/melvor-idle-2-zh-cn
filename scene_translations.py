@@ -1,5 +1,7 @@
 """Reviewed UI strings stored in scenes outside the shipped translation catalog."""
 TRANSLATIONS = {
+    'Task Categories': '任务类别',
+    '+{0:N0} Points per completion': '每次完成+{0:N0}积分',
     'This is what\'s left before we reach v1.0.': 'v1.0 正式版前待完成的内容：',
     'Only Level 1 - 99 content is currently available.': '目前仅开放1至99级的内容。',
     'Combat Skills': '战斗技能',
