@@ -1,6 +1,6 @@
 # Melvor Idle 2 简体中文补丁 v1.0.0
 
-Windows 一键汉化及恢复工具，已在 0.11.6-alpha.1 / Godot 4.7.2 实机检查。**仍有已知漏译，不宣称百分之百汉化。**
+Windows 一键汉化及恢复工具，已在 0.11.6-alpha.1 / Godot 4.7.2 实机检查。
 
 **[下载最新版汉化器 EXE](https://github.com/QIANJINYDX/melvor-idle-2-zh-cn/releases/latest/download/Melvor2-Chinese-Patch.exe)** · [最新发布说明](https://github.com/QIANJINYDX/melvor-idle-2-zh-cn/releases/latest)
 
