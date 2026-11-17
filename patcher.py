@@ -10,8 +10,9 @@ import re
 import struct
 import subprocess
 import tempfile
+from contextlib import contextmanager
 
-VERSION = '1.0.0'
+VERSION = '2.0.0'
 DEFAULT_GAME = Path(r'D:\Steam\steamapps\common\Melvor Idle 2')
 USER_ROOT = Path(os.environ.get('APPDATA', str(Path.home()))) / 'Games By Malcs/Melvor Idle 2'
 BACKUP_SUFFIX = '.melvor-zh-backup.json'
@@ -134,23 +135,51 @@ def set_language(path, restore=False):
     return '已启用简体中文（原语言已备份）'
 
 
-def operate(game, restore=False, root=USER_ROOT):
-    ensure_closed()
-    if not restore:
-        inspect_game(game)
-    files = settings_files(root)
-    if not files:
-        raise RuntimeError('未找到用户设置。请先启动游戏进入初始设置后退出，再运行本工具。')
-    # Validate every file before the first write.
-    for path in files:
-        read_json(path)
-    results = []
-    for path in files:
+@contextmanager
+def installation_lock(game):
+    """OS lock is released after a crash; the harmless lock file may remain."""
+    path = Path(game) / '.melvor-zh.lock'
+    with path.open('a+b') as lock:
+        if lock.seek(0, 2) == 0:
+            lock.write(b'0')
+            lock.flush()
+        lock.seek(0)
         try:
-            results.append(f'{path.parent.name}: {set_language(path, restore)}')
-        except Exception as exc:
-            raise RuntimeError('\n'.join(results + [f'{path}: {exc}'])) from exc
-    return '\n'.join(results)
+            if os.name == 'nt':
+                import msvcrt
+                msvcrt.locking(lock.fileno(), msvcrt.LK_NBLCK, 1)
+            else:
+                import fcntl
+                fcntl.flock(lock.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
+        except OSError as exc:
+            raise RuntimeError('另一个汉化器正在处理此游戏，请等待它完成。') from exc
+        try:
+            yield
+        finally:
+            lock.seek(0)
+            if os.name == 'nt':
+                msvcrt.locking(lock.fileno(), msvcrt.LK_UNLCK, 1)
+            else:
+                fcntl.flock(lock.fileno(), fcntl.LOCK_UN)
+
+
+def operate(game, restore=False, root=USER_ROOT):
+    with installation_lock(game):
+        return _operate_locked(game, restore, root)
+
+
+def _operate_locked(game, restore=False, root=USER_ROOT):
+    import localization
+    import assembly_patch
+    ensure_closed()
+    if restore:
+        results = [assembly_patch.restore(game), localization.restore(game)]
+        for path in settings_files(root):
+            if path.with_name(path.name + BACKUP_SUFFIX).exists():
+                set_language(path, True)
+        return '\n'.join(results)
+    inspect_game(game)
+    return '\n'.join([localization.install(game), assembly_patch.install(game)])
 
 
 def find_game():
@@ -176,13 +205,13 @@ def gui():
     if os.name == 'nt':
         ctypes.windll.shcore.SetProcessDpiAwareness(1)
     root = tk.Tk()
-    root.title('Melvor Idle 2 简体中文启用器 v' + VERSION)
+    root.title('Melvor Idle 2 汉化补丁 v' + VERSION)
     root.geometry('760x440')
     root.minsize(700, 420)
     frame = ttk.Frame(root, padding=24)
     frame.pack(fill='both', expand=True)
     ttk.Label(frame, text='Melvor Idle 2 · 一键汉化', font=('Microsoft YaHei UI', 21, 'bold')).pack(anchor='w')
-    ttk.Label(frame, text='启用游戏自带简体中文 · 自动备份原语言 · 支持恢复', padding=(0, 8)).pack(anchor='w')
+    ttk.Label(frame, text='修复语言加载与漏译 · 自动备份游戏原文件 · 一键恢复', padding=(0, 8)).pack(anchor='w')
     row = ttk.Frame(frame)
     row.pack(fill='x', pady=12)
     folder = tk.StringVar(value=str(find_game()))
@@ -192,19 +221,21 @@ def gui():
         if selected:
             folder.set(selected)
     ttk.Button(row, text='浏览…', command=browse).pack(side='right', padx=(8, 0))
-    status = tk.StringVar(value='请先退出游戏，然后点击“一键汉化”。\n将处理当前 Windows 用户下的所有本地游戏账号。')
+    status = tk.StringVar(value='请先退出游戏，然后点击“一键汉化”。\n首次安装需要约 650 MB 空间保存原版备份。')
     def run(restore=False):
         try:
-            status.set(operate(folder.get(), restore) + '\n重新启动游戏后生效。')
+            status.set('正在校验并处理游戏文件，请稍候……')
+            root.update_idletasks()
+            status.set(operate(folder.get(), restore) + '\n通过 Steam 重新启动游戏后生效。')
         except Exception as exc:
             status.set(str(exc))
             messagebox.showerror('操作未完成', str(exc))
     buttons = ttk.Frame(frame)
     buttons.pack(fill='x', pady=12)
     ttk.Button(buttons, text='一键汉化', command=run).pack(side='left', ipadx=24, ipady=10)
-    ttk.Button(buttons, text='恢复原语言', command=lambda: run(True)).pack(side='left', padx=12, ipadx=16, ipady=10)
+    ttk.Button(buttons, text='恢复原版', command=lambda: run(True)).pack(side='left', padx=12, ipadx=16, ipady=10)
     ttk.Label(frame, textvariable=status, wraplength=680).pack(anchor='w', pady=12)
-    ttk.Label(frame, text='非官方工具。使用内置译文，部分新增内容可能仍为英文。\n仅修改 Language 设置；游戏文件、角色存档及其他设置保持原样。',
+    ttk.Label(frame, text='非官方补丁。修复内置中文并补译遗漏文本，不修改角色存档。\n游戏更新后需重新检查兼容性；遇到未知版本或异常备份会停止安装。',
               foreground='#666666', wraplength=680).pack(side='bottom', anchor='w')
     root.mainloop()
 
