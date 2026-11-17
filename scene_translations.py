@@ -96,4 +96,10 @@ TRANSLATIONS = {
     'Yes, reset to level 60 (Hold to confirm)': '是，重置为60级（按住确认）',
     'Yes, reset to level 60': '是，重置为60级',
     'No, keep my XP': '保留经验',
+    'Special Attack': '特殊攻击',
+    'Special Attacks': '特殊攻击',
+    'Damage on Fail:': '失败伤害：',
+    'Time Spent': '耗时',
+    'Edit this NPC': '编辑此NPC',
+    'Onboarding Tasks': '新手任务',
 }
