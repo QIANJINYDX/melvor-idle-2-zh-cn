@@ -85,3 +85,11 @@ v2 重建实际加载的目录，限定翻译数据的显示字段，修复明�
 资源候选复审补译 6 条固定原文：Special Attack、Special Attacks、Damage on Fail:、Time Spent、Edit this NPC、Onboarding Tasks，覆盖 7 个场景位置，累计 95 处。17 项测试通过；最终 EXE 安装后，逐资源验证内容与预期完全相同，资源 MD5 校验通过。新标签未逐一实机触发，因此仅计为资源验证。
 
 调用位置检查发现 Automatic Local Save Failed / Automatic Cloud Save Failed 仅传入日志 Error 方法，本轮保留日志原文。其余开发编辑器字段、异常文字、动态占位示例继续单独审核，不盲目替换。
+
+### v2.4.2 动态属性标签审查
+
+按字符串令牌定位方法并关联所属类型，对剩余英文候选进行分类。CreateAllModifierLabels（原版 MethodDef 50909）中发现 17 条未进入 PO 的灵巧属性标签和说明；反汇编确认直接传入 CreateModifierStatNodesLabel。已补译并通过长度、参数及富文本保留检查。
+
+17 项测试通过；打包 EXE 应用成功；实际程序集与 patch_game(原始备份) 输出相同，按原令牌读取恰有 120 处文本变化。游戏通过 Steam 启动到登录界面。新增属性说明尚未逐项实机展示，不能计为视觉验证完成。
+
+本地审查产物 `_work/remaining-runtime-classified.json` 保留方法与类型关联，供后续检查；其中还包含内部编辑器说明、日志和格式指令，不据候选数量计算汉化率。

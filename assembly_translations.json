@@ -100,5 +100,22 @@
   "Inflict {0:N0}-{1:N0} stacks of [effectIcon/] {2} for {3:N0} turns": "施加{0:N0}-{1:N0}层[effectIcon/] {2}，持续{3:N0}回合",
   "{0:P0} chance to inflict {1:N0}-{2:N0} stacks of [effectIcon/] {3} for {4:N0} turns": "有{0:P0}概率施加{1:N0}-{2:N0}层[effectIcon/] {3}，持续{4:N0}回合",
   "Inflict [effectIcon/] {0} for {1:N0} attacks": "施加[effectIcon/] {0}，持续{1:N0}次攻击",
-  "{0:P0} chance to inflict [effectIcon/] {1} for {2:N0} attacks": "有{0:P0}概率施加[effectIcon/] {1}，持续{2:N0}次攻击"
+  "{0:P0} chance to inflict [effectIcon/] {1} for {2:N0} attacks": "有{0:P0}概率施加[effectIcon/] {1}，持续{2:N0}次攻击",
+  "Damage Taken (%)": "承受伤害（%）",
+  "Adjustment to the damage taken when failing an obstacle": "挑战障碍失败时承受的伤害调整",
+  "Trap Success Chance (Flat)": "陷阱成功率（固定）",
+  "The flat adjustment to your trap success chance": "陷阱成功率的固定调整值",
+  "Entry Cost Preservation Chance": "入场消耗保留概率",
+  "Your chance to preserve the entry cost when starting a Course": "开始路线时保留入场消耗的概率",
+  "Course Reward Quantity (%)": "路线奖励数量（%）",
+  "Adjustment to the quantity of items and currency received for completing a Course": "完成路线时获得的物品和货币数量调整",
+  "Obstacle Reward Quantity (%)": "障碍奖励数量（%）",
+  "Adjustment to the quantity of items received from obstacles": "通过障碍获得的物品数量调整",
+  "Obstacle Reward Quantity (Flat)": "障碍奖励数量（固定）",
+  "Increased Obstacle Reward Chance": "障碍奖励概率加成",
+  "Adjustment to your chance to receive items from obstacles": "通过障碍获得物品的概率调整",
+  "Obstacle Reward Chance (Flat)": "障碍奖励概率（固定）",
+  "The flat adjustment to your chance to receive items from obstacles": "通过障碍获得物品概率的固定调整值",
+  "Keep Obstacle Rewards on Fail": "失败时保留障碍奖励",
+  "If greater than 0, obstacle rewards are kept when failing an obstacle": "大于0时，挑战障碍失败仍保留障碍奖励"
 }
