@@ -9,10 +9,11 @@ from pathlib import Path
 import re
 import struct
 import subprocess
+import sys
 import tempfile
 from contextlib import contextmanager
 
-VERSION = '2.9.0'
+VERSION = '2.9.1'
 DEFAULT_GAME = Path(r'D:\Steam\steamapps\common\Melvor Idle 2')
 USER_ROOT = Path(os.environ.get('APPDATA', str(Path.home()))) / 'Games By Malcs/Melvor Idle 2'
 BACKUP_SUFFIX = '.melvor-zh-backup.json'
@@ -179,11 +180,20 @@ def _operate_locked(game, restore=False, root=USER_ROOT):
                 set_language(path, True)
         return '\n'.join(results)
     inspect_game(game)
-    return '\n'.join([localization.install(game), assembly_patch.install(game)])
+    results = [localization.install(game), assembly_patch.install(game)]
+    verified = diagnose(game)
+    if not verified.get('resources_match_record') or not verified.get('chinese_catalog'):
+        raise RuntimeError('文件写入后检查不通过，请导出诊断报告。')
+    results.append('已核对补丁文件。实际修改路径：' + str((Path(game) / 'Melvor2.exe').resolve()))
+    results.append('请从此目录启动；其他目录的游戏不会被修改。')
+    return '\n'.join(results)
 
 
 def find_game():
-    candidates = [DEFAULT_GAME, Path.cwd(), Path(__file__).resolve().parent]
+    # In a frozen one-file build __file__ points into a temporary extraction
+    # folder, not the folder containing the downloaded patcher executable.
+    application = Path(sys.executable if getattr(sys, 'frozen', False) else __file__).resolve().parent
+    candidates = [application, Path.cwd()]
     if os.name == 'nt':
         import winreg
         try:
@@ -196,7 +206,43 @@ def find_game():
             candidates += [x / 'steamapps/common/Melvor Idle 2' for x in libraries]
         except OSError:
             pass
+    candidates.append(DEFAULT_GAME)
     return next((p for p in candidates if (p / 'Melvor2.exe').is_file()), DEFAULT_GAME)
+
+
+def diagnose(game):
+    """Read-only report: no saves, account data, or unrelated processes."""
+    import localization
+    folder = Path(game).resolve()
+    exe = folder / 'Melvor2.exe'
+    report = {'patcher_version': VERSION, 'game_exe': str(exe), 'exists': exe.is_file()}
+    if not exe.is_file():
+        return report
+    report['exe_sha256'] = localization.sha256(exe)
+    record = folder / 'melvor-zh-patch.json'
+    report['installation_record_exists'] = record.is_file()
+    if record.is_file():
+        state = read_json(record)
+        report['resources_match_record'] = report['exe_sha256'] == state.get('patched_sha256')
+        report['installed_counts'] = {key: state.get(key) for key in
+                                      ('entries', 'data_fields', 'fonts_adapted', 'wrapping_labels')}
+    else:
+        report['resources_match_record'] = False
+    entries = localization.catalog_entries(exe)
+    english = entries['Locale/en_GB.po']['data']
+    report['chinese_catalog'] = (b'X-Melvor-ZH-Patch' in english and '选项'.encode() in english)
+    report['auto_detected_directory'] = str(find_game())
+    if os.name == 'nt':
+        process = subprocess.run(['powershell.exe', '-NoProfile', '-NonInteractive', '-Command',
+                                  "[Console]::OutputEncoding = [System.Text.UTF8Encoding]::new(); @(Get-Process -Name Melvor2 -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Path) | ConvertTo-Json -Compress"],
+                                 capture_output=True, creationflags=subprocess.CREATE_NO_WINDOW)
+        paths = json.loads(process.stdout.decode('utf-8-sig', errors='replace') or '[]')
+        if isinstance(paths, str):
+            paths = [paths]
+        report['running_game_executables'] = paths
+        report['running_different_copy'] = any(Path(p).resolve() != exe for p in paths if p)
+    report['note'] = '文件校验通过只证明此路径已安装补丁，不代表 Steam 启动了此文件或游戏未在之后更新。'
+    return report
 
 
 def gui():
@@ -234,6 +280,18 @@ def gui():
     buttons.pack(fill='x', pady=12)
     ttk.Button(buttons, text='一键汉化 + 字体适配', command=run).pack(side='left', ipadx=24, ipady=10)
     ttk.Button(buttons, text='恢复原版', command=lambda: run(True)).pack(side='left', padx=12, ipadx=16, ipady=10)
+    def export_diagnostics():
+        try:
+            report = diagnose(folder.get())
+            output = filedialog.asksaveasfilename(title='保存只读诊断报告',
+                initialfile='Melvor2-Chinese-Diagnostic.json', defaultextension='.json',
+                filetypes=[('JSON', '*.json')])
+            if output:
+                atomic_json(output, report)
+                status.set('诊断报告已保存：' + output + '\n请把报告发给维护者；报告不包含存档。')
+        except Exception as exc:
+            messagebox.showerror('诊断未完成', str(exc))
+    ttk.Button(buttons, text='导出诊断', command=export_diagnostics).pack(side='left', padx=4)
     ttk.Label(frame, textvariable=status, wraplength=680).pack(anchor='w', pady=12)
     ttk.Label(frame, text='非官方补丁。修复内置中文并补译遗漏文本，不修改角色存档。\n游戏更新后需重新检查兼容性；遇到未知版本或异常备份会停止安装。',
               foreground='#666666', wraplength=680).pack(side='bottom', anchor='w')
@@ -243,7 +301,7 @@ def gui():
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--game', type=Path, default=find_game())
-    parser.add_argument('--action', choices=['inspect', 'apply', 'restore', 'self-test'])
+    parser.add_argument('--action', choices=['inspect', 'diagnose', 'apply', 'restore', 'self-test'])
     parser.add_argument('--report', type=Path)
     args = parser.parse_args()
     if not args.action:
@@ -259,6 +317,8 @@ def main():
             window.update()
             window.destroy()
             result = 'Tk GUI runtime OK'
+        elif args.action == 'diagnose':
+            result = diagnose(args.game)
         else:
             result = inspect_game(args.game) if args.action == 'inspect' else operate(args.game, args.action == 'restore')
         report = {'ok': True, 'result': result}

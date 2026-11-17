@@ -4,10 +4,25 @@ import tempfile
 import unittest
 import struct
 import hashlib
+from unittest.mock import patch
 import patcher
 
 
 class SettingsTests(unittest.TestCase):
+    def test_frozen_patcher_prefers_its_actual_folder(self):
+        with tempfile.TemporaryDirectory() as d:
+            folder = Path(d)
+            (folder / 'Melvor2.exe').write_bytes(b'fixture')
+            with patch.object(patcher.sys, 'frozen', True, create=True), \
+                 patch.object(patcher.sys, 'executable', str(folder / 'Patch.exe')):
+                self.assertEqual(patcher.find_game(), folder)
+
+    def test_diagnostic_missing_installation_is_not_success(self):
+        with tempfile.TemporaryDirectory() as d:
+            report = patcher.diagnose(d)
+            self.assertFalse(report['exists'])
+            self.assertNotIn('resources_match_record', report)
+
     def test_pack_verifies_translation_hash(self):
         with tempfile.TemporaryDirectory() as d:
             po = b'Language: zh_CN'
