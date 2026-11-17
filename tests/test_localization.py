@@ -3,6 +3,8 @@ import json
 from pathlib import Path
 import struct
 import tempfile
+import re
+from collections import Counter
 import unittest
 from unittest.mock import patch
 
@@ -39,6 +41,14 @@ def fixture():
 
 
 class LocalizationTests(unittest.TestCase):
+    def test_reviewed_scene_translations_preserve_format_tokens_and_fit(self):
+        from scene_translations import TRANSLATIONS
+        for source, target in TRANSLATIONS.items():
+            with self.subTest(source=source):
+                self.assertLessEqual(len(target.encode('utf-8')), len(source.encode('utf-8')) + 1)
+                pattern = r'\{[^{}]*\}|\[/?(?:color(?:=[^\]]+)?|b|img(?: [^\]]+)?)\]'
+                self.assertEqual(Counter(re.findall(pattern, source)), Counter(re.findall(pattern, target)))
+
     def test_padded_scene_format_keeps_offsets_and_parameters(self):
         with tempfile.TemporaryDirectory() as folder:
             exe = Path(folder)/'Melvor2.exe'
