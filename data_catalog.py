@@ -6,6 +6,7 @@ from pathlib import Path
 import polib
 
 from additions import TRANSLATIONS, PRESERVE
+from format_literals import translate_format_literals
 
 DISPLAY_FIELDS = {
     'DisplayName', 'Singular', 'Plural', 'DialogueText', 'Description',
@@ -55,7 +56,7 @@ def translate_data(payload, chinese):
                     if translated is None and key == 'Plural' and isinstance(singular, str):
                         translated = lookup(singular)
                     if translated is not None:
-                        value[key] = translated
+                        value[key] = translate_format_literals(translated)
                         count += 1
                     else:
                         missing[child] = key

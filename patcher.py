@@ -12,7 +12,7 @@ import subprocess
 import tempfile
 from contextlib import contextmanager
 
-VERSION = '2.5.0'
+VERSION = '2.6.0'
 DEFAULT_GAME = Path(r'D:\Steam\steamapps\common\Melvor Idle 2')
 USER_ROOT = Path(os.environ.get('APPDATA', str(Path.home()))) / 'Games By Malcs/Melvor Idle 2'
 BACKUP_SUFFIX = '.melvor-zh-backup.json'

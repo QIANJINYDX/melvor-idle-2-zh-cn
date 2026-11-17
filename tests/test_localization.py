@@ -41,6 +41,21 @@ def fixture():
 
 
 class LocalizationTests(unittest.TestCase):
+    def test_conditional_display_literals_are_translated_in_both_sources(self):
+        source = '{Value:cond:<0?Decreased|>=0?Increased} {Value:0%}'
+        translated = source + '稀有掉落概率'
+        zh = po('zh_CN', [dict(msgid=source, msgstr=translated)])
+        en = po('en_GB', [dict(msgid=source, msgstr=source)])
+        catalog, _ = localization.merge_catalogs(en, zh)
+        actual = polib.pofile(catalog.decode('utf-8')).find(source).msgstr
+        expected = '{Value:cond:<0?降低|>=0?提高} {Value:0%}稀有掉落概率'
+        self.assertEqual(actual, expected)
+        data, stats = data_catalog.translate_data(json.dumps({
+            'Id': source, 'Description': source,
+        }).encode(), zh)
+        self.assertEqual(json.loads(data), {'Id': source, 'Description': expected})
+        self.assertFalse(stats['missing'])
+
     def test_reviewed_scene_translations_preserve_format_tokens_and_fit(self):
         from scene_translations import TRANSLATIONS
         for source, target in TRANSLATIONS.items():

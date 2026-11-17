@@ -9,6 +9,7 @@ import struct
 import tempfile
 
 import polib
+from format_literals import translate_format_literals
 
 EXTRA = {
     '[color=#FFD16D]Alt (Hold)[/color]: [color=#E9DFC1]Interact[/color]':
@@ -111,6 +112,7 @@ def merge_catalogs(english, chinese):
         if not translated:
             missing.append(x.msgid)
             continue
+        translated = translate_format_literals(translated)
         out.append(polib.POEntry(msgid=x.msgid, msgctxt=x.msgctxt,
                                 msgid_plural=x.msgid_plural,
                                 msgstr='' if x.msgid_plural else translated,
