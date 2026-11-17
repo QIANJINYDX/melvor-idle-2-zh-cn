@@ -1,0 +1,7 @@
+_work/
+.venv/
+build/
+dist/
+__pycache__/
+*.spec
+*.log
