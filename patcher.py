@@ -12,7 +12,7 @@ import subprocess
 import tempfile
 from contextlib import contextmanager
 
-VERSION = '2.7.0'
+VERSION = '2.8.0'
 DEFAULT_GAME = Path(r'D:\Steam\steamapps\common\Melvor Idle 2')
 USER_ROOT = Path(os.environ.get('APPDATA', str(Path.home()))) / 'Games By Malcs/Melvor Idle 2'
 BACKUP_SUFFIX = '.melvor-zh-backup.json'
@@ -210,7 +210,7 @@ def gui():
     root.minsize(700, 420)
     frame = ttk.Frame(root, padding=24)
     frame.pack(fill='both', expand=True)
-    ttk.Label(frame, text='Melvor Idle 2 · 一键汉化', font=('Microsoft YaHei UI', 21, 'bold')).pack(anchor='w')
+    ttk.Label(frame, text='Melvor Idle 2 · 汉化与字体适配', font=('Microsoft YaHei UI', 21, 'bold')).pack(anchor='w')
     ttk.Label(frame, text='修复语言加载与漏译 · 自动备份游戏原文件 · 一键恢复', padding=(0, 8)).pack(anchor='w')
     row = ttk.Frame(frame)
     row.pack(fill='x', pady=12)
@@ -221,7 +221,7 @@ def gui():
         if selected:
             folder.set(selected)
     ttk.Button(row, text='浏览…', command=browse).pack(side='right', padx=(8, 0))
-    status = tk.StringVar(value='请先退出游戏，然后点击“一键汉化”。\n首次安装需要约 650 MB 空间保存原版备份。')
+    status = tk.StringVar(value='请先退出游戏，然后点击“一键汉化 + 字体适配”。\n首次安装需要约 650 MB 空间保存原版备份。')
     def run(restore=False):
         try:
             status.set('正在校验并处理游戏文件，请稍候……')
@@ -232,7 +232,7 @@ def gui():
             messagebox.showerror('操作未完成', str(exc))
     buttons = ttk.Frame(frame)
     buttons.pack(fill='x', pady=12)
-    ttk.Button(buttons, text='一键汉化', command=run).pack(side='left', ipadx=24, ipady=10)
+    ttk.Button(buttons, text='一键汉化 + 字体适配', command=run).pack(side='left', ipadx=24, ipady=10)
     ttk.Button(buttons, text='恢复原版', command=lambda: run(True)).pack(side='left', padx=12, ipadx=16, ipady=10)
     ttk.Label(frame, textvariable=status, wraplength=680).pack(anchor='w', pady=12)
     ttk.Label(frame, text='非官方补丁。修复内置中文并补译遗漏文本，不修改角色存档。\n游戏更新后需重新检查兼容性；遇到未知版本或异常备份会停止安装。',
@@ -255,7 +255,7 @@ def main():
             from tkinter import ttk
             window = tk.Tk()
             window.withdraw()
-            ttk.Button(window, text='一键汉化').pack()
+            ttk.Button(window, text='一键汉化 + 字体适配').pack()
             window.update()
             window.destroy()
             result = 'Tk GUI runtime OK'

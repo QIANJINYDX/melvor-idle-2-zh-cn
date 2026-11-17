@@ -72,7 +72,7 @@ def catalog_entries(exe, include_resources=False):
                 entry_flags, = struct.unpack_from('<I', data, pos+32)
                 record = pos
                 pos += 36
-                if name in ('Locale/en_GB.po', 'Locale/zh_CN.po') or (include_resources and (name == 'Data/Packages/MelvorBase.json' or name.endswith('.scn'))):
+                if name in ('Locale/en_GB.po', 'Locale/zh_CN.po') or (include_resources and (name == 'Data/Packages/MelvorBase.json' or name.endswith(('.scn', '.fontdata')))):
                     begin = base + file_base + offset
                     if entry_flags or size > 50000000 or begin + size > len(data):
                         raise ValueError('不支持此语言资源格式。')
@@ -212,9 +212,15 @@ def install(game):
     if b'X-Melvor-ZH-Patch' in original['data']:
         raise ValueError('检测到补丁，但缺少有效安装记录。停止修改以保护备份。')
     replacements, stats = build_replacements(entries)
+    from font_patch import build_fonts
+    fonts = build_fonts(entries)
+    if fonts and not (Path(os.environ.get('WINDIR', 'C:/Windows')) / 'Fonts/msyh.ttc').is_file():
+        raise ValueError('此系统缺少微软雅黑字体，请先通过 Windows 语言功能安装简体中文字体。')
+    replacements.update(fonts)
+    stats['fonts_adapted'] = len(fonts)
     current_entries = catalog_entries(exe, include_resources=True) if source_exe == backup else {}
     if source_exe == backup and all(current_entries[k]['data'] == v for k, v in replacements.items()):
-        return '汉化补丁已经安装。'
+        return '汉化与中文字体适配已经安装。'
     if any(len(payload) > entries[name]['size'] for name, payload in replacements.items()):
         raise ValueError('汉化资源超出预留容量；不支持此游戏版本。')
     if backup.exists():
@@ -256,7 +262,7 @@ def install(game):
     finally:
         if os.path.exists(temp):
             os.unlink(temp)
-    return f'已安装汉化：{stats["entries"]} 条词条，修复 {stats["contexts_repaired"]} 条名称上下文。'
+    return f'已安装汉化：{stats["entries"]} 条词条，修复 {stats["contexts_repaired"]} 条名称上下文，适配 {stats["fonts_adapted"]} 个字体资源。'
 
 
 def restore(game):
