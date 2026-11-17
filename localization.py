@@ -10,6 +10,7 @@ import tempfile
 
 import polib
 from format_literals import translate_format_literals
+from unit_preferences import preserve_units
 
 EXTRA = {
     '[color=#FFD16D]Alt (Hold)[/color]: [color=#E9DFC1]Interact[/color]':
@@ -112,7 +113,7 @@ def merge_catalogs(english, chinese):
         if not translated:
             missing.append(x.msgid)
             continue
-        translated = translate_format_literals(translated)
+        translated = preserve_units(x.msgid, translate_format_literals(translated))
         out.append(polib.POEntry(msgid=x.msgid, msgctxt=x.msgctxt,
                                 msgid_plural=x.msgid_plural,
                                 msgstr='' if x.msgid_plural else translated,
@@ -165,6 +166,7 @@ def build_replacements(entries):
         if name.endswith('-tracker_experience_view.scn'):
             local_formats['Level'] = '等级'
         for english, chinese_text in local_formats.items():
+            chinese_text = preserve_units(english, chinese_text)
             old = english.encode() + b'\0'
             new = chinese_text.encode() + b'\0'
             if len(new) == len(old) + 1:

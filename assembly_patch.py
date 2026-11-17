@@ -7,6 +7,7 @@ import struct
 import tempfile
 
 import dnfile
+from unit_preferences import preserve_units
 
 DATA_DIR = 'data_GamesByMalcs.Melvor2_windows_x86_64'
 GAME_DLL = 'GamesByMalcs.Melvor2.dll'
@@ -14,28 +15,8 @@ TIME_DLL = 'SmartFormat.Extensions.Time.dll'
 
 
 def patch_time(data):
-    pe = dnfile.dnPE(data=data, clr_lazy_load=True)
-    resource = next((r for r in pe.net.mdtables.ManifestResource if str(r.Name) == 'SmartFormat.Extensions.Time.Resources.en.json'), None)
-    if resource is None:
-        raise ValueError('不支持此版本的时间格式资源。')
-    offset = pe.get_offset_from_rva(pe.net.struct.ResourcesRva) + resource.Offset
-    size, = struct.unpack_from('<I', data, offset)
-    original = json.loads(data[offset+4:offset+4+size])
-    expected = {'week': '周', 'day': '天', 'hour': '小时', 'minute': '分钟',
-                'second': '秒', 'millisecond': '毫秒', 'w': '周', 'd': '天',
-                'h': '小时', 'm': '分', 's': '秒', 'ms': '毫秒'}
-    if set(original) != {'PluralRule', 'Ptxt_lessThan'} | {'Ptxt_' + k for k in expected}:
-        raise ValueError('时间资源结构已变化。')
-    for key, value in expected.items():
-        original['Ptxt_' + key] = ['{0}' + value] * len(original['Ptxt_' + key])
-    original['Ptxt_lessThan'] = '不足{0}'
-    translated = json.dumps(original, ensure_ascii=False, separators=(',', ':')).encode('utf-8')
-    if len(translated) > size:
-        raise ValueError('中文时间资源超出容量。')
-    result = bytearray(data)
-    # Pad with JSON whitespace, preserving every assembly/resource offset.
-    result[offset+4:offset+4+size] = translated.ljust(size, b' ')
-    return bytes(result)
+    # Install uses the verified original backup, restoring earlier Chinese units.
+    return data
 
 
 def patch_game(data):
@@ -45,6 +26,7 @@ def patch_game(data):
     wanted = {'[center][b]You were away for {0:numbertime(ms):auto}[/b][/center]':
               '[center][b]你已离线 {0:numbertime(ms):auto}[/b][/center]'}
     wanted.update(json.loads(Path(__file__).with_name('assembly_translations.json').read_text('utf-8')))
+    wanted = {source: preserve_units(source, target) for source, target in wanted.items()}
     result = bytearray(data)
     found = set()
     pos = 1
@@ -121,7 +103,7 @@ def install(game):
         atomic_bytes(root / name, patched)
         if hashlib.sha256((root / name).read_bytes()).hexdigest() != state[name]['patched']:
             raise ValueError(f'{name} 安装后校验失败。')
-    return '已修复显示提示与中文时间单位。'
+    return '已修复显示提示，钱和时间单位保留原版。'
 
 
 def atomic_bytes(path, data):
