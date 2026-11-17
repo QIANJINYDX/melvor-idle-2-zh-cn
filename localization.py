@@ -11,6 +11,8 @@ import tempfile
 import polib
 
 EXTRA = {
+    '[color=#FFD16D]Alt (Hold)[/color]: [color=#E9DFC1]Interact[/color]':
+        '[color=#FFD16D]按住Alt[/color]：[color=#E9DFC1]交互[/color]',
     'The delay in [seconds] for a Tooltip to appear.': '提示框显示前的延迟时间，单位为秒。',
     'Tooltip position offset in [pixels] from your cursor.': '提示框相对鼠标的位置偏移，单位为像素。',
     'Total Level {0:N0}': '总等级 {0:N0}',
