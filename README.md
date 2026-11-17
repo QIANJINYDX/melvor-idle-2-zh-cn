@@ -44,3 +44,13 @@ python patcher.py --action inspect --game "D:\Steam\steamapps\common\Melvor Idle
 输出 `dist/Melvor2-Chinese-Patch.exe`。EXE 支持 `--action inspect|apply|restore|self-test --report <JSON路径>`，自动化调用请等待进程退出并读取报告。
 
 仓库只分发工具、补充译文与说明，不包含游戏原始资源、原版备份、用户存档或账号数据。游戏及内置译文归各自权利人所有。
+
+### 可选：后台验证游戏的格式器
+
+在已安装游戏的 Windows 电脑上执行：
+
+```powershell
+.\tests\test_smartformat_runtime.ps1 -GamePath 'D:\Steam\steamapps\common\Melvor Idle 2'
+```
+
+直接加载游戏自带的 SmartFormat.dll 验证条件分支和列表连接词，不启动游戏、不读写存档、不操作桌面窗口。它验证格式语法和输出，不代替实机界面排版检查。
