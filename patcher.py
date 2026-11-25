@@ -13,7 +13,7 @@ import sys
 import tempfile
 from contextlib import contextmanager
 
-VERSION = '1.0.0'
+VERSION = '1.1.0'
 DEFAULT_GAME = Path(r'D:\Steam\steamapps\common\Melvor Idle 2')
 USER_ROOT = Path(os.environ.get('APPDATA', str(Path.home()))) / 'Games By Malcs/Melvor Idle 2'
 BACKUP_SUFFIX = '.melvor-zh-backup.json'
@@ -180,7 +180,11 @@ def _operate_locked(game, restore=False, root=USER_ROOT):
                 set_language(path, True)
         return '\n'.join(results)
     inspect_game(game)
+    from update_migration import prepare_update
+    migration = prepare_update(game)
     results = [localization.install(game), assembly_patch.install(game)]
+    if migration:
+        results.insert(0, migration)
     verified = diagnose(game)
     if not verified.get('resources_match_record') or not verified.get('chinese_catalog'):
         raise RuntimeError('文件写入后检查不通过，请导出诊断报告。')

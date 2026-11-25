@@ -10,13 +10,20 @@ import struct
 
 
 def apply_layout(entries, replacements):
-    manifest = json.loads(Path(__file__).with_name('layout_patches.json').read_text('utf-8'))
+    manifests = [json.loads(Path(__file__).with_name(filename).read_text('utf-8'))
+                 for filename in ('layout_patches.json', 'layout_patches_26886380.json')]
+    candidates = {}
+    for manifest in manifests:
+        for name, spec in manifest.items():
+            candidates.setdefault(name, []).append(spec)
     count = 0
-    for name, spec in manifest.items():
+    for name, options in candidates.items():
         if name not in entries:
             continue
         original = entries[name]['data']
-        if hashlib.sha256(original).hexdigest() != spec['sha256']:
+        digest = hashlib.sha256(original).hexdigest()
+        spec = next((item for item in options if item['sha256'] == digest), None)
+        if spec is None:
             raise ValueError('换行布局资源已变化，请更新汉化器：' + name)
         payload = bytearray(replacements.get(name, original))
         for edit in spec['edits']:

@@ -1,0 +1,10 @@
+[
+  {
+    "steam_build": "26886380",
+    "files": {
+      "Melvor2.exe": "4fbd4504809b2d2cf3c12ad962a632f4b1dd0934eebd2452f3766ebc313146d1",
+      "data_GamesByMalcs.Melvor2_windows_x86_64/GamesByMalcs.Melvor2.dll": "ad27d7141953bb76927f9e74992d629106455c7c017f3d0138ac8268ccf9796c",
+      "data_GamesByMalcs.Melvor2_windows_x86_64/SmartFormat.Extensions.Time.dll": "003e766c17348b3988dc825f59d515525d9a5996be6ddf7ad0336b1e9e8aa868"
+    }
+  }
+]
